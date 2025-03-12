@@ -1,0 +1,332 @@
+/* Esconde todos os elementos inicialmente */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caprasimo&display=swap');
+
+.navbar-nav{
+    background-color: black;
+}
+
+  /* Muda a cor da opção quando clicada */
+.active-link {
+    color: #949494;
+    font-weight: bold; 
+}
+
+/* Estiliza o hiperlink da opção */
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 5px;
+ 
+}
+
+/* Estiliza o título da opção escolhida */
+#titulo-secao {
+    background-color: #4F4D4D;
+    margin: 4px 0 -12px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Estiliza a img carrinho */
+#carrinho {
+    width: 17px;
+    top: -18px;
+    left: 1330px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Quando clicada, deve ficar 20% maior */
+#carrinho:hover {
+    transform: scale(1.2);
+}
+
+/* Título do produto*/
+.texto h3 {
+
+    font-size: 22px;
+    margin: 12px;
+ 
+}
+
+/* Infor do produto */
+.texto p {
+    margin: 12px;
+    font-family: "Cabin", serif;
+    font-weight: 900;
+    color: #858585;
+    width: 250px;
+   
+  }
+/* Estiliza a caixa de produtos */
+#plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
+#escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
+#bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
+    width: 600px; /* Define a largura da div */
+    height: 210px; /* Define a altura da div */
+    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 40px;
+    
+   
+    
+    
+}
+
+/* Estiliza a caixa de produtos */
+#plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
+#milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
+    width: 600px; /* Define a largura da div */
+    height: 210px; /* Define a altura da div */
+    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 40px;
+    
+    
+
+}
+
+
+#secao1, #secao2, #secao3, #secao4, #secao5, #secao6, #secao7, #secao8, #secao9 {
+    display: grid;
+    align-items: center;
+    
+
+}
+
+.img-direita{
+    padding: 15px 0 0 0;
+    margin-left: 60px;
+    width: 200px;
+    height: 160px;
+
+}
+.img-esquerda{
+    padding: 15px 0 0 0;
+    margin-left: 60px;
+    width: 200px;
+    height: 160px;
+
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.olho {
+    margin-top: 10px;
+    margin-left: 210px;
+    width: 20px;
+}
+.texto {
+    width: 250px;
+}
+
+
+
+.cabeca {
+    height: 300px;
+    width: 100%;
+    
+    
+    background-image: url(imgs/cabeçalho.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-size: cover;
+    height: 35px;
+    background-color: black;
+    
+}
+li {
+    padding: 5px 2px;
+    color: white;
+    font-family: "Caprasimo", serif;
+    font-size: 14px;
+    margin: 0 12px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+   
+}
+li:hover {
+    transform: scale(1.05); /* 20% maior */
+}
+footer {
+    background-color: black;
+    color:white ;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .barra-escolha {
+      display: none;
+    }
+  }
+
+ @media (max-width: 1024px) {
+  .navbar-toggler {
+    display: block !important; /* Garante que o botão apareça */
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar-toggler {
+    display: none !important; /* Oculta o botão em telas maiores */
+  }
+}
+
+  
+@media screen and (max-width: 767px){
+    /* Estiliza a caixa de produtos */
+#plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
+#escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
+#bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
+    width: 370px; /* Define a largura da div */
+    height: 180px; /* Define a altura da div */
+    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+
+   
+    
+   
+    
+    
+}
+
+/* Estiliza a caixa de produtos */
+#plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
+#milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
+    width: 370px; /* Define a largura da div */
+    height: 180px; /* Define a altura da div */
+    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+
+    
+
+}
+
+
+    .img-direita{
+        padding: 15px 0 0 0;
+        margin-left: -60px;
+        width: 150px;
+        height: 130px;
+    
+    }
+    .img-esquerda{
+        padding: 15px 0 0 0;
+        margin-left: -60px;
+        width: 150px;
+        height: 130px;
+    
+    }
+    .texto h3 {
+        font-size: 12px;
+        margin: 12px;
+     
+    }
+    
+    /* Infor do produto */
+    .texto p {
+        margin: 12px;
+        font-family: "Cabin", serif;
+        font-weight: 900;
+        color: #858585;
+        font-size: 10px;
+        width: 160px;
+       
+      }
+      .olho {
+        margin-top: 15px;
+        margin-left: 70px;
+        width: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
+#escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
+#bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
+    width: 370px; /* Define a largura da div */
+    height: 180px; /* Define a altura da div */
+    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 40px;
+    margin-left: -40px;
+    
+   
+    
+    
+}
+
+/* Estiliza a caixa de produtos */
+#plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
+#milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
+    width: 380px; /* Define a largura da div */
+    height: 180px; /* Define a altura da div */
+    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 40px;
+    
+
+}
+
+
+    .img-direita{
+        padding: 15px 0 0 0;
+        margin-left: -60px;
+        width: 150px;
+        height: 130px;
+    
+    }
+    .img-esquerda{
+        padding: 15px 0 0 0;
+        margin-left: -60px;
+        width: 150px;
+        height: 130px;
+    
+    }
+    .texto h3 {
+        font-size: 12px;
+        margin: 12px;
+     
+    }
+    
+    /* Infor do produto */
+    .texto p {
+        margin: 12px;
+        font-family: "Cabin", serif;
+        font-weight: 900;
+        color: #858585;
+        font-size: 10px;
+        width: 160px;
+       
+      }
+      .olho {
+        margin-top: 15px;
+        margin-left: 70px;
+        width: 20px;
+    }
+
+}
+

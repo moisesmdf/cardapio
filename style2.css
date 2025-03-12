@@ -1,0 +1,33 @@
+
+img {
+    max-width: 300px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    
+}
+h1 {
+    color: white;
+    font-size: 28px;
+}
+body {
+    background-color: black;
+}
+ .conteudo {
+    text-align: center;
+ }
+
+ button {
+    background-color: #6A6A6A ;
+    padding: 8px 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+
+
+ }
+
+ a {
+    text-decoration: none;
+    color: white;
+
+ }
