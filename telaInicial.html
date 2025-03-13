@@ -1,32 +1,1390 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style2.css" >
-    <title>Tela inicial</title>
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-
-
-    <style>
-
-
-    </style>
 </head>
+
 <body>
-    
-    <main>
-        <div class="conteudo">
-
-            <img src="imgs/logo-seven-kings.png" alt="Logo Seven Kings">
-
-            <h1>Seven Kings Burgers N Beers</h1>
-
-            <button><a href="index1.html">Acessar Cardápio</a></button>
-
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imgs/image 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/image 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/image 1.png" class="d-block w-100" alt="...">
+            </div>
         </div>
-    </main>
+    </div>
+
+
+    <div class="barra-escolha">
+        <ul>
+            <li><a href="#" onclick="showItem(1, this)">Plebeus Smash</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(2, this)">Plebeus</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(3, this)">Reis e Rainhas</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(4, this)">Nobres Convidados</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(5, this)">Escudeiros</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(6, this)">Milk-Shakes</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(7, this)">Sobremesas</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(8, this)">Cerveja</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="showItem(9, this)">Bebidas</a></li>
+            <ul>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler d-lg-none custom-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end offcanvas-lg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">O que você gostaria de ver?:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item"><a href="#" onclick="showItem(1, this)">Plebeus Smash</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(2, this)">Plebeus</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(3, this)">Reis e Rainhas</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(4, this)">Nobres Convidados</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(5, this)">Escudeiros</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(6, this)">Milk-Shakes</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(7, this)">Sobremesas</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(8, this)">Cerveja</a></li>
+                        <li class="nav-item"><a href="#" onclick="showItem(9, this)">Bebidas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 id="titulo-secao">Plebeus Smash</h1>
+
+
+    <a href="pagamento.html"><img id="carrinho" src="imgs/carrinho.png" alt="Carrinho de compras"></a>
+
+    <div id="secao1" class="conteiner">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+
+                    <div id="plebeusSmash1">
+
+                        <div class="texto">
+
+                            <h3>Hambúrguer Smach</h3>
+                            <p>Pão de Cará, Carne Smash de 90g e Maionese Verde </p>
+                            <h4>Serve 1 pessoa</h4>
+
+                            <div class="teste row">
+                                <div id="preco">
+                                    <p>R$ 25,07</p>
+                                </div>
+
+                                <div class="quantidade">
+                                    <button onclick="alterarQuantidade(-1)">-</button>
+                                    <span id="quantidade">0</span>
+                                    <button onclick="alterarQuantidade(1)">+</button>
+                                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Hambúrguer-Smash.png" alt="Hambúrguer Smach">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeusSmash2">
+
+                        <div class="texto">
+
+                            <h3>Cheese Burguer Smash</h3>
+                            <p>Pão de Cará, Carne Smash de 90g, Queijo e Maionese.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 30,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Hambúrguer-Smash.png" alt="Cheese Burguer Smash">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeusSmash3">
+
+                        <div class="texto">
+                            <h3>Smashed Bacon</h3>
+                            <p>Pão de Cará, Carne Smash de 90g, Queijo e Farofa de Bacon.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 30,07</P>
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Smashed-Bacon.png" alt="Smashed Bacon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeusSmash4">
+
+                        <div class="texto">
+                            <h3>Cheese Salada Smash</h3>
+                            <p>Pão de Cará, Hambúrguer Smash de 90g, Queijo Prato, Alface, Tomate, Cebola Roxa e
+                                Maionese
+                                Verde.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 34,07</P>
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Cheese Salada-Smash.png" alt="Cheese Salada Smash">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeusSmash5">
+
+                        <div class="texto">
+                            <h3>Cheese Bacon Smash</h3>
+                            <p>Pão de Cará, Hambúrguer Smash de 90g, Queijo Prato, Candy Bacon e Maionese Verde.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 38,07</P>
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Cheese Bacon-Smash.png" alt="Cheese Bacon Smash">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="secao2" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="plebeus1">
+
+                        <div class="texto">
+
+                            <h3>Hambúrguer</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g e Maionese Verde. Possui Opção Vegetariana </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 33,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/hamburguer.png" alt="hamburguer">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeus2">
+
+                        <div class="texto">
+
+                            <h3>Cheese Burger</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g, Queijo Prato e Maionese. Possui Opção
+                                Vegetariana </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 37,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Cheese-Burger.png" alt="Cheese Burger">
+                            <img class="olho" src="imgs/olho.png">
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeus3">
+
+                        <div class="texto">
+
+                            <h3>Cheese Salada</h3>
+                            <p>Pão de cará, Hambúrguer de 180g, Queijo Prato, Alface, Tomate, Cebola Roxa e
+                                Maionese Verde, Possui Opção Vegetariana </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 42,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Cheese-Salada.png" alt="Cheese Salada">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div id="plebeus4">
+
+                        <div class="texto">
+
+                            <h3>Cheese Bacon</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g, Queijo Prato, Candy Bacon e Maionese.
+                                "Possui Opção Vegetariana* </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Cheese-Bacon.png" alt="Cheese Bacon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="secao3" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="reisRainhas1">
+
+                        <div class="texto">
+
+                            <h3>Rei Carlos Magno Humilde</h3>
+                            <p>Pão de cara, Hambúrguer de 180g, 60g de Queijo Camembert Empanado, Candy Bacon e Maionese
+                                Verde.
+                                "Possui Opção...</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 61,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Rei-Carlos-Magno-Humilde.png"
+                                alt="Rei Carlos Magno Humilde">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="reisRainhas2">
+
+                        <div class="texto">
+
+                            <h3>Rei Ludwig da Baviera</h3>
+                            <p>Pão de Cará, 2 Hambúrgueres Smash de 90g, Queijo Cheddar, Candy Bacon,
+                                Maionese de Bacon, Molho Bbq e Picles de... </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Rei-Ludwig-da-Baviera.png" alt="Rei Ludwig da Baviera">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="reisRainhas3">
+
+                        <div class="texto">
+
+                            <h3>Rainha Boudicca</h3>
+                            <p>Pão de Cará, 2 Hambúrgueres Smash 90g, Queijo Cheddar, Farofa de Bacon,
+                                Tomate, Alface e Molho Especial com Relish de Pepin... </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Rainha-Boudicca.png" alt="Rainha Boudicca">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="reisRainhas4">
+
+                        <div class="texto">
+
+                            <h3>Rei Ragnar Lothbrok</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g, Cream Cheese, Candy Bacon e Geléia de
+                                Pimenta. "Possui Opção Vegetariana*</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Rei-Ragnar-Lothbrok.png" alt="Rei Ragnar Lothbrok">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="reisRainhas5">
+
+                        <div class="texto">
+
+                            <h3>Rei Rorbert De Bruce</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g ,Queijo Cheddare Cebola Caramelizada no Bbq e Scotch
+                                Whisky.
+                                *Possui Opção Vegetariana*</p>
+                            <h4>Serve 1 pessoa</h4>>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Rei-Robert-De-Bruce.png" alt="Rei Rorbert De Bruce">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="reisRainhas6">
+
+                        <div class="texto">
+
+                            <h3>Rei Arthur Pendragon</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g, Creme de Gorgonzola, Farofa de Bacon e Rúcula.
+                                *Possui Opção Vegetariana*</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Rei-Arthur-Pendragon.png" alt="Rei Arthur Pendragon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="reisRainhas7">
+
+                        <div class="texto">
+
+                            <h3>Rei Alexandre, O Grande</h3>
+                            <p>Pão de Cará, Hambúrguer de 180g,Disco de Parmesão Chapeado, Cogumelo Salteados com
+                                Alecrim, Maionese de Bacon e couve. *Possui Opção Vegetariana*</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 46,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Rei-Alexandre,O-Grande.png"
+                                alt="Rei Alexandre, O Grande">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="secao4" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="nobresConvidados1">
+
+                        <div class="texto">
+
+                            <h3>Rei Ruff Ghanor</h3>
+                            <p>Pão de Cará, 2 Smash Burgers 90g, Queijo de Cabra, Molho Verde e Bom
+                                (pistache), Cogumelos da Entrada do Inferno, Caramelo </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 49,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Rei-Ruff-Ghanor.png" alt="Rei-Ruff-Ghanor">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="nobresConvidados2">
+
+                        <div class="texto">
+
+                            <h3>Sir Lancelot</h3>
+                            <p>Pão de Cará, 140g de Frango Empanado, Cheddar, Alface e Molho Especial com
+                                Relish de Pepino. "Possui Opção Vegetariana* </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 42,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Sir-Lancelot.png" alt="Sir Lancelot">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="nobresConvidados3">
+
+                        <div class="texto">
+
+                            <h3>La Hire</h3>
+                            <p>Pão de Cará, Hambúrguer Smash de 90g, Cheddar e Molho Especial com Relish
+                                de Pepino.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 26,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/La-Hire.png" alt="La Hire">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="secao5" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="escudeiros1">
+
+                        <div class="texto">
+
+                            <h3>Batata Chips Individual</h3>
+                            <p>Porção Individual de Batata Frita Chips.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 20,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Batata-Chips.png" alt="Batata Chips Individual">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="escudeiros2">
+
+                        <div class="texto">
+
+                            <h3>Batata Chips</h3>
+                            <p>Porção de Batata frita chips.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 20,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Batata-Chips.png" alt="Batata Chips">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="escudeiros3">
+
+                        <div class="texto">
+
+                            <h3>Batata Chips com Creme de Gorgonzola e Farofa de Bacon</h3>
+                            <p>Porção de Batata Frita Chips com Creme de Gorgonzola e Farofa de Bacon.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 37,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Batata-Chips-com-Cheddar-e-Farofa-de-Bacon.png"
+                                alt="Batata Chips com Creme de Gorgonzola e Farofa de Bacon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="escudeiros4">
+
+                        <div class="texto">
+
+                            <h3>Batata Chips com Cheddar e Farofa de Bacon</h3>
+                            <p>Porção de Batata Frita Chips com Cheddar Cremoso e Farofa de Bacon.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 33,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Batata-Chips-com-Cheddar-e-Farofa-de-Bacon.png"
+                                alt="Batata Chips com Cheddar e Farofa de Bacon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="escudeiros5">
+
+                        <div class="texto">
+
+                            <h3>Alabarda</h3>
+                            <p>Porção de 6 unidades de queijo Gouda empanados, acompanhada de geleia de pimenta da casa.
+                            </p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 33,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Alabarda.png" alt="Alabarda">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="escudeiros6">
+
+                        <div class="texto">
+
+                            <h3>Mangual</h3>
+                            <p>Porção de 6 unidades de bolinhos de carne defumada empanados, acompanhado com geleia de
+                                pimenta da casa.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 33,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Mangual.png" alt="Mangual">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="escudeiros7">
+
+                        <div class="texto">
+
+                            <h3>Candy Bacon</h3>
+                            <p>Porção de 4 fatias de bacon caramelizado.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 37,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Candy-Bacon.png" alt="Candy Bacon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="secao6" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="milkShake1">
+
+                        <div class="texto">
+
+                            <h3>Valeria</h3>
+                            <p>Milkshake de Sorvete de Creme, Mousse de Limão, Massa de Torta e Raspas de Limão</p>
+                            <P>R$ 29,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Valeria.png" alt="Valeria">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="milkShake2">
+
+                        <div class="texto">
+
+                            <h3>Bêlit</h3>
+                            <p>Milkshake de Sorvete de Creme com Doce de Leite e Paçoca.</p>
+                            <P>R$ 29,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Bêlit.png" alt="Bêlit">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="milkShake3">
+
+                        <div class="texto">
+
+                            <h3>Red Sonja</h3>
+                            <p>Milkshake de Sorvete de Creme com Calda de Frutas Vermelhas.</p>
+                            <P>R$ 29,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Red-Sonja.png" alt="Red Sonja">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="milkShake4">
+
+                        <div class="texto">
+
+                            <h3>Zula</h3>
+                            <p>Milkshake de Sorvete de Creme com Nutella.</p>
+                            <P>R$ 29,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Zula.png" alt="Zula">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="secao7" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="sobremesas1">
+
+                        <div class="texto">
+
+                            <h3>Morgana</h3>
+                            <p>Torta Mousse de Chocolate Assado,Mousse de Chocolate,Doce de Leite,Cobertura de Ganache
+                                Chocolate.
+                            </p>
+                            <P>R$ 29,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Morgana.png" alt="Morgana">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="sobremesas2">
+
+                        <div class="texto">
+
+                            <h3>Goldmoon</h3>
+                            <p>Torta com Mousse de Limão, Ganache de Chocolate Branco, Chantilly com Leite
+                                em Pó e Raspas de Limão.</p>
+                            <P>R$ 29,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-direita" src="imgs/Goldmoon.png" alt="Goldmoon">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="sobremesas3">
+
+                        <div class="texto">
+
+                            <h3>Yennefer</h3>
+                            <p>Cheesecake com Cobertura de Frutas Vermelhas.</p>
+                            <P>R$ 29,07 </P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Yennefer.png" alt="Yennefer">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="secao8" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="cerveja1">
+
+                        <div class="texto">
+
+                            <h3>Ever Kings</h3>
+                            <p>Cerveja no Estilo New England IPA, Com 8,1% de Teor Alcoólico e 80 Ibu,Produzida em
+                                Parceria Com
+                                Cervejaria Everbrew(473ml).</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ 49,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Ever-Kings.png" alt="Ever Kings" <img class="olho"
+                                src="imgs/olho.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja2">
+
+                        <div class="texto">
+
+                            <h3>Evertreze Pilsen</h3>
+                            <p>Cerveja Estilo Pilsen.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ R$ 17,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Evertreze-Pilsen.png" alt="Evertreze-Pilsen" <img
+                                class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja3">
+
+                        <div class="texto">
+
+                            <h3>Evertreze session IPA</h3>
+                            <p>Evertreze session IPA</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ R$ 22,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Evertreze-Session-IPA.png" alt="Evertreze-Session-IPA">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja4">
+
+                        <div class="texto">
+
+                            <h3>Evertreze Sour</h3>
+                            <p>Cerveja Estilo SourCerveja Estilo Sour</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ R$ 22,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Evertreze-Sour.png" alt="Evertreze-Sour" <img
+                                class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja5">
+
+                        <div class="texto">
+
+                            <h3>Evertreze Hop Lager</h3>
+                            <p>Cerveja Estilo Hop Lager.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ R$22,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Evertreze-Hop-Lager.png" alt="Ever Kings">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja6">
+
+                        <div class="texto">
+
+                            <h3>Evertreze Red Ale</h3>
+                            <p>Cerveja Estilo Red Ale.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ R$ 33,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Evertreze-Red-Ale.png" alt="Evertreze-Red-Ale" <img
+                                class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja7">
+
+                        <div class="texto">
+
+                            <h3>Evertreze IPA<h3>
+                                    <p>Cerveja Estilo IPA.</p>
+                                    <h4>Serve 1 pessoa</h4>
+                                    <P>R$ R$23.07>
+
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Evertreze-IPA.png" alt="Ever Kings">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja8">
+
+                        <div class="texto">
+
+                            <h3>Heineken </h3>
+                            <p>330ml.</p>
+                            <h4>Serve 1 pessoa</h4>
+                            <P>R$ R$ 17,07</P>
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Heineken.png" alt="Ever Kings">
+                            <img class="olho" src="imgs/olho.png">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cerveja9">
+
+                        <div class="texto">
+
+                            <h3>Heineken Zero <h3>
+                                    <p>330ml.</p>
+                                    <h4>Serve 1 pessoa</h4>
+                                    <P>R$ R$ 23,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Heineken-Zero.jpeg" alt="Ever Kings">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="secao9" class="conteiner d-none">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                <div class="col">
+                    <div id="bebida1">
+
+                        <div class="texto">
+
+                            <h3>Poção do Druída Maçã Verde</h3>
+                            <p>Soda Italiana sabor Maçã Verde</p>
+                            <P>R$ 15,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Poção-do-Druída-Maçã-Verde.png"
+                                alt="Poção-do-Druída-Maçã-Verde">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida2">
+
+                        <div class="texto">
+
+                            <h3>Poção do Druída Melancia</h3>
+                            <p>Soda Italiana sabor Melancia</p>
+                            <P>R$ 15,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Poção-do-Druída-Melancia.png"
+                                alt="Poção-do-Druída-Melancia">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida3">
+
+                        <div class="texto">
+
+                            <h3>Poção do Druída Tangerina<h3>
+                                    <p>Soda Italiana sabor Tangerina
+                                    <p>
+                                    <p>R$ 15,07
+                                    <p>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Poção-do-Druída-Tangerina.png"
+                                alt="Poção-do-Druída-Tangerina">
+                            <img class="olho" src="imgs/olho.png">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida4">
+
+                        <div class="texto">
+
+                            <h3>Coca Zero<h3>
+                                    <p>350 ml
+                                    <p>
+                                    <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Coca-Zero.png" alt="Coca-Zero">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida5">
+
+                        <div class="texto">
+
+                            <h3>Coca cola<h3>
+                                    <p>350 ml
+                                    <p>
+                                    <p>R$ R$ 9,07
+                                    <p>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Coca-Cola.png" alt="Coca-Cola">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida6">
+
+                        <div class="texto">
+
+                            <h3>Fanta guaraná zero</h3>
+                            <p>350 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Fanta-Guaraná-Zero.png" alt="Fanta-Guaraná-Zero">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida7">
+
+                        <div class="texto">
+
+                            <h3>Fanta Guaraná</h3>
+                            <p>350 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Fanta-Guaraná.png" alt="Fanta-Guaraná">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida8">
+
+                        <div class="texto">
+
+                            <h3>Fanta Uva</h3>
+                            <p>350 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Fanta-Uva.png" alt="Fanta-Uva">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida9">
+
+                        <div class="texto">
+
+                            <h3>Fanta laranja</h3>
+                            <p>350 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Fanta-Laranja.png" alt="Fanta-Laranja">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida10">
+
+                        <div class="texto">
+
+                            <h3>Schweppes Citrus Zero</h3>
+                            <p>350 ml</p>
+                            <P>R$ 15,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Schweppes-Citrus-Zero.png" alt="Schweppes-Citrus-Zero">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida11">
+
+                        <div class="texto">
+
+                            <h3>Schweppes Citrus</h3>
+                            <p>350 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Schweppes-Citrus.png" alt="Schweppes-Citrus">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida12">
+
+                        <div class="texto">
+
+                            <h3>Del Valle Uva</h3>
+                            <p>290 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Del-Valle-Uva.png" alt="Del-Valle-Uva">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida13">
+
+                        <div class="texto">
+
+                            <h3>Sprite</h3>
+                            <p>290 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Sprite.png" alt="Sprite">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida14">
+
+                        <div class="texto">
+
+                            <h3>Água com gás</h3>
+                            <p>500 ml</p>
+                            <P>R$ 6,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Água-gás.png">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida15">
+
+                        <div class="texto">
+
+                            <h3>Del Valle Pêssego</h3>
+                            <p>290 ml</p>
+                            <P>R$ 9,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Del-Valle-Pêssego.png" alt="Del-Valle-Pêssego">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="bebida17">
+
+                        <div class="texto">
+
+                            <h3>Água sem gás</h3>
+                            <p>500 ml</p>
+                            <P>R$ 6,07</P>
+
+                        </div>
+
+                        <div class="imgs">
+
+                            <img class="img-esquerda" src="imgs/Água.png">
+                            <img class="olho" src="imgs/olho.png">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer> © Copyright 2025, Todos os direitos reservados</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

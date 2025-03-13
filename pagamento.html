@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .cabecalho {
+            background-color: black;
+            color: white;
+        }
+
+        h6 {
+            background-color: #4F4D4D;
+        }
+        .titulo {
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+        .img{
+            width: 70px;
+        }
+        .hamburguer, .cocaCola {
+            border: 1px solid rgb(0, 0, 0); /* Define a cor e espessura da borda */;
+            margin-bottom: 20px;
+        }
+        .dinheiro, .pix, .cartao {
+            display: flex;
+            border: 2px solid rgb(0, 0, 0); /* Define a cor e espessura da borda */;
+            border-radius: 10px;
+            margin: 20px 20px;
+            width: 250px;
+
+        }
+        .formaPagamento {
+            align-items: center;
+        }
+        .formas {
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho text-center">
+        <img src="imgs/logo-seven-kings.png" alt="Logo Seven Kings">
+
+        <h1>Seven Kings Burgers N Beers</h1>
+
+    </div>
+
+    <h6 class="text-center">Carrinho</h6>
+
+    <div class="conteiners">
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3">
+                <div class="col">
+                    <div class="pedido">
+                        <h5 class="titulo">Pedido Nº 001</h5>
+
+                        <div class="hamburguer">
+                            <div class="row">
+                                <div class="col">
+                                
+                                    <img class="img" src="imgs/Cheese Salada-Smash.png">
+                                  
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="texto">
+                                            <h3>Cheese Salada Smash</h3>
+                                            <P>R$ 34,07</P>
+            
+                                            <div class="quantidade">
+                                                <button onclick="alterarQuantidade(-1)">-</button>
+                                                <span id="quantidade">0</span>
+                                                <button onclick="alterarQuantidade(1)">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="cocaCola">
+                            <div class="row">
+                                <div class="col">
+                                
+                                    <img class="img" src="imgs/Coca-Cola.png">
+                                  
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="texto">
+                                            <h3>Coca Cola</h3>
+                                            <P>R$ 9,07</P>
+            
+                                            <div class="quantidade">
+                                                <button onclick="alterarQuantidade(-1)">-</button>
+                                                <span id="quantidade">0</span>
+                                                <button onclick="alterarQuantidade(1)">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="formaPagamento">
+                        <h5 class="titulo">Forma de Pagamento</h5>
+
+                        <div class="formas">
+                            <div class="dinheiro">
+                                <img src="imgs/dinheiro.png">
+
+                                <p>Dinheiro</p>
+                            </div>
+
+                            <div class="pix">
+                                <img src="imgs/pix.png">
+
+                                <p>Pix</p>
+                            </div>
+
+                            <div class="cartao">
+                                <img src="imgs/cartao-1.png">
+
+                                <p>Cartão</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="formaPagamento">
+                        <h5 class="titulo">Detalhes do Pedido </h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

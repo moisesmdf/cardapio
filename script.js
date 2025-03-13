@@ -11,3 +11,10 @@ function showItem(num, element) {
 // Exibe a seção 1 e destaca o primeiro link por padrão
 document.querySelector('.barra-escolha a').classList.add('active-link');
 showItem(1, document.querySelector('.barra-escolha a'));
+
+let quantidade = 0;
+
+        function alterarQuantidade(valor) {
+            quantidade = Math.max(0, quantidade + valor); // Evita números negativos
+            document.getElementById('quantidade').innerText = quantidade;
+        }
