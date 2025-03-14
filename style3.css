@@ -1,0 +1,149 @@
+.cabecalho {
+    background-color: black;
+    color: white;
+    height: 370px;
+}
+
+#img-logo {
+    width: 190px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#nome-carrinho {
+    background-color: #4F4D4D;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 110px;
+}
+
+
+.titulo {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    padding-top: 7px;
+}
+
+.img {
+    width: 70px;
+}
+
+
+
+
+#dinheiro,
+#pix,
+#cartao {
+    display: flex;
+    border: 3px solid rgb(0, 0, 0);
+    /* Define a cor e espessura da borda */
+    border-radius: 10px;
+    margin: 20px 20px;
+    width: 300px;
+    height: 67px;
+    justify-content: center;
+
+
+}
+#dinheiro {
+    margin-top: 80px;
+}
+
+.formaPagamento {
+    align-items: center;
+
+}
+
+.formas {
+    justify-items: center;
+}
+
+.texto {
+    display: flex;
+}
+
+.conteudo,
+.preco-qtde {
+    display: flex;
+}
+
+.hamburguer {
+    box-shadow: 0px 0px 5px ;
+    margin: 20px 20px ;
+}
+.img {
+    width: 135px;
+    height: 115px;
+    padding: 20px;
+}
+#titulo-produto1 {
+    padding-top: 25px;
+    font-size: 20px;
+}
+#titulo-produto2 {
+    padding-top: 25px;
+    margin-right: 90px;
+    font-size: 20px;
+}
+.pedido, .formaPagamento, .detalhes {
+    height: 400px;
+    box-shadow: 0px 0px 5px ;
+    margin-bottom: 40px;
+}
+
+.preco {
+    margin-top: 18px;
+    margin-left: 8px;
+    
+    
+}
+.quantidade {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.quantidade button {
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+
+}
+#quantidade {
+    font-size: 20px;
+    
+}
+.nomeFormaPag {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 7px;
+}
+
+.fotoFormaPag1 {
+    width: 80px;
+    
+    margin-right: 10px;
+}
+.fotoFormaPag2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+    
+    margin-right: 20px;
+}
+.fotoFormaPag3 {
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+    
+    margin-right: 20px;
+}
+#informacoes {
+    justify-content: left;
+}
+
