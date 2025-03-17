@@ -70,7 +70,7 @@
     display: flex;
 }
 
-.hamburguer {
+.hamburguer, .cocaCola {
     box-shadow: 0px 0px 5px ;
     margin: 20px 20px ;
 }
@@ -81,12 +81,12 @@
 }
 #titulo-produto1 {
     padding-top: 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 #titulo-produto2 {
     padding-top: 25px;
     margin-right: 90px;
-    font-size: 20px;
+    font-size: 16px;
 }
 .pedido, .formaPagamento, .detalhes {
     height: 400px;
@@ -206,13 +206,26 @@
     margin-left: 90px;
     margin-top: 45px;
  }
+ @media screen and (max-width: 768px){
+    #titulo-produto1 {
+        font-size: 15px;
+    }
+    #img-logo {
+        max-width:300px;
+        margin-top: 30px;
+        
+    }
+    .cabecalho {
+        height: 345px;
+    }
+ }
  @media screen and (min-width: 768px) and (max-width: 1024px){
     .detalhes {
         width: 500px;
       margin-left: 90px;
     }
     .hamburguer {
-        height: 100px;
+        height: 100%;
     }
     #titulo-produto1 {
         font-size: 15px;
