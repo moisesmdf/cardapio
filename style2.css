@@ -1,15 +1,12 @@
-
-img {
-    max-width: 300px;
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+#logo {
+    max-width: 500px;
     margin-top: 80px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     
 }
-h1 {
-    color: white;
-    font-size: 28px;
-}
-body {
+
+#telaInicio {
     background-color: black;
 }
  .conteudo {
@@ -17,17 +14,23 @@ body {
  }
 
  button {
-    background-color: #6A6A6A ;
-    padding: 8px 15px;
-    margin-top: 30px;
+    background-color: #FDF3C8 ;
+    
     border-radius: 10px;
     border: none;
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 220px;
+    height: 40px;
+
 
 
  }
 
  a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 
  }
