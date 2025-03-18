@@ -1,5 +1,9 @@
 /* Esconde todos os elementos inicialmente */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caprasimo&display=swap');
+.te{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .carousel {
     max-height: 100%;
 }
@@ -8,9 +12,6 @@
     border: none;
     background-color: white;
     margin-bottom: 10px;
-
-
-
     font-size: 12px;
 
 }
@@ -30,16 +31,17 @@
     position: static;
 }
 
-.teste {
-    display: flex;
-
-
-}
 
 button.add-to-cart {
     background-color: black;
     color: white;
     font-size: 8px;
+}
+
+.teste {
+    display: flex;
+
+
 }
 
 /* Muda a cor da opção quando clicada */
@@ -238,6 +240,7 @@ li:hover {
 }
 
 footer {
+    margin-top: 80px;
     background-color: black;
     color: white;
     text-align: center;
@@ -287,7 +290,7 @@ footer {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 440px) {
     #carrinho-container {
         position: absolute;
         top: 205px; /* Distância do topo */
@@ -301,15 +304,7 @@ footer {
         cursor: pointer;
     }
     ul {
-        list-style: none;
-        padding: 0;
         margin-top: 110px;
-        display: flex;
-        background-size: cover;
-        height: 35px;
-        justify-content: center;
-    
-    
     }
 
     li {
@@ -440,9 +435,9 @@ footer {
     #bebida13,
     #bebida15,
     #bebida17 {
-        width: 370px;
+        width: 100%;
         /* Define a largura da div */
-        height: 180px;
+        height: 160px;
         /* Define a altura da div */
         border: 2px solid rgb(242, 242, 242);
         /* Define a borda */
@@ -455,7 +450,6 @@ footer {
 
     /* Estiliza a caixa de produtos */
     #plebeusSmash2,
-    #plebeusSmash4,
     #plebeus2,
     #plebeus4,
     #reisRainhas2,
@@ -480,9 +474,9 @@ footer {
     #bebida12,
     #bebida14,
     #bebida16 {
-        width: 370px;
+        width: 100%;
         /* Define a largura da div */
-        height: 180px;
+        height: 160px;
         /* Define a altura da div */
         border: 2px solid rgb(242, 242, 242);
         /* Define a borda */
@@ -493,51 +487,77 @@ footer {
 
 
     }
-
-
-    .img-direita {
-        padding: 15px 0 0 0;
-        margin-left: -60px;
-        width: 150px;
-        height: 130px;
-
+    #plebeusSmash5, #plebeusSmash4 {
+        height: 178px;
     }
 
     .img-esquerda {
         padding: 15px 0 0 0;
-        margin-left: -60px;
-        width: 150px;
-        height: 130px;
+        margin-left: -26px;
+        width: 140px;
+        height: 120px;
+
+    }
+
+    .img-direita {
+        padding: 15px 0 0 0;
+        margin-left: -26px;
+        width: 140px;
+        height: 120px;
 
     }
 
     .texto h3 {
-        font-size: 12px;
+        font-size: 16px;
         margin: 12px;
+
+    }
+    /* Infor do produto */
+    .texto p {
+        margin: 15px 0 15px 12px;
+        font-family: "Cabin", serif;
+        font-weight: 900;
+        color: #858585;
+        font-size: 12px;
+        width: 185px;
 
     }
 
     .texto h4 {
-        font-size: 12px;
-        margin: 12px;
+        font-size: 13px;
 
     }
 
-    /* Infor do produto */
-    .texto p {
-        margin: 12px;
-        font-family: "Cabin", serif;
-        font-weight: 900;
-        color: #858585;
-        font-size: 10px;
-        width: 160px;
-
-    }
 
     .olho {
-        margin-top: 15px;
-        margin-left: 70px;
-        width: 20px;
+        margin-top: 3px;
+        margin-left: 106px;
+        width: 18px;
+    }
+    .quantidade button {
+        font-size: 15px;
+    
+    }
+    
+    #preco {
+        margin-top: -8px;
+    
+    }
+    
+    #quantidade {
+        font-size: 15px;
+        color: #000000;
+    }
+    
+    .quantidade {
+        margin-left: 85px;
+        
+    }
+    
+    
+    button.add-to-cart {
+        margin-left: 8px;
+        font-size: 8px;
     }
 }
 
@@ -553,6 +573,9 @@ footer {
         width: 14px; /* Ajuste o tamanho conforme necessário */
         height: auto;
         cursor: pointer;
+    }
+    ul {
+        margin-top: 110px;
     }
     li {
         padding: 5px 2px;
