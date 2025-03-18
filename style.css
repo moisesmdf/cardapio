@@ -40,13 +40,14 @@ button.add-to-cart {
   /* Muda a cor da opção quando clicada */
 .active-link {
     color: #949494;
-    font-weight: bold; 
+    background-color: #000000;
+
     
 }
 
 /* Estiliza o hiperlink da opção */
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-right: 5px;
  
@@ -56,7 +57,7 @@ a {
 #titulo-secao {
     background-color: #4F4D4D;
     color: #FFFFFF;
-    margin: 4px 0 -12px 0;
+    margin: 0 0 -12px 0;
     text-align: center;
     font-size: 20px;
 }
@@ -66,7 +67,6 @@ a {
     width: 17px;
     top: -18px;
     left: 1330px;
-    position: relative;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -106,7 +106,7 @@ a {
 #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
     width: 600px; /* Define a largura da div */
     height: 210px; /* Define a altura da div */
-    border: 2px solid rgb(242, 242, 242); /* Define a borda */
+    border: 2px solid rgb(0, 0, 0); /* Define a borda */
     padding: 0 0 0 10px;
     box-sizing: border-box;
     display: flex;
@@ -189,7 +189,7 @@ ul {
     display: flex;
     background-size: cover;
     height: 35px;
-    background-color: black;
+    
     
 }
 li {
@@ -231,7 +231,15 @@ footer {
   }
 
  @media (max-width: 1024px) {
-  .navbar-toggler {
+    .active-link {
+        color: #ffffff;
+        background-color: #000000;
+        padding: 7px 100px 7px 10px ;
+        
+    
+        
+    }
+    .navbar-toggler {
     display: block !important; /* Garante que o botão apareça */
   }
 }
@@ -244,6 +252,47 @@ footer {
 
   
 @media screen and (max-width: 767px){
+    li {
+        padding: 5px 2px;
+        width: 100%;
+        color: #000000;
+        font-family: "Caprasimo", serif;
+        font-size: 14px;
+        margin: 0 12px;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+       
+    }
+    span {
+        color: transparent;
+    }
+    .active-link {
+        color: white; 
+        background-color: black;
+        padding: 7px 160px 7px 10px ;
+        
+    
+        
+    }
+
+    .barra-escolha a {
+    /* Estilo normal dos links */
+    background-color: transparent; /* Fundo transparente por padrão */
+    color: white; /* Cor do texto padrão */
+    padding: 10px;
+    display: block;
+}
+
+.barra-escolha a.active-link {
+    background-color: black; /* Fundo preto para o link ativo */
+    color: white; /* Cor do texto em branco */
+}
+    a {
+        color: #000000;
+        text-decoration: none;
+        margin-right: 5px;
+       
+      }
     .navbar {
         background-color: black !important;
         color: white;
