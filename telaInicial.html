@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -53,7 +54,7 @@
             <li><a href="#" onclick="showItem(9, this)">Bebidas</a></li>
         </ul>
     </div>
-    
+
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
@@ -62,7 +63,8 @@
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end offcanvas-lg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end offcanvas-lg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">O que você gostaria de ver?:</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -83,7 +85,7 @@
             </div>
         </div>
     </nav>
-    
+
 
 
     <h1 id="titulo-secao">Plebeus Smash</h1>
@@ -94,188 +96,188 @@
             <img id="carrinho" src="imgs/carrinho.png" alt="Carrinho de compras">
         </a>
     </div>
+    <div class="te">
+        <div id="secao1" class="conteiner">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
+                    <div class="col">
 
-    <div id="secao1" class="conteiner">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
-                <div class="col">
+                        <div id="plebeusSmash1">
 
-                    <div id="plebeusSmash1">
+                            <div class="texto">
 
-                        <div class="texto">
+                                <h3>Hambúrguer Smach</h3>
+                                <p>Pão de Cará, Carne Smash de 90g e Maionese Verde </p>
+                                <h4>Serve 1 pessoa</h4>
 
-                            <h3>Hambúrguer Smach</h3>
-                            <p>Pão de Cará, Carne Smash de 90g e Maionese Verde </p>
-                            <h4>Serve 1 pessoa</h4>
+                                <div class="teste row">
+                                    <div id="preco">
+                                        <p>R$ 25,07</p>
+                                    </div>
 
-                            <div class="teste row">
-                                <div id="preco">
-                                    <p>R$ 25,07</p>
+                                    <div class="quantidade">
+                                        <button onclick="alterarQuantidade(-1)">-</button>
+                                        <span id="quantidade">0</span>
+                                        <button onclick="alterarQuantidade(1)">+</button>
+                                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                                    </div>
                                 </div>
 
-                                <div class="quantidade">
-                                    <button onclick="alterarQuantidade(-1)">-</button>
-                                    <span id="quantidade">0</span>
-                                    <button onclick="alterarQuantidade(1)">+</button>
-                                    <button class="add-to-cart">Adicionar ao carrinho</button>
-                                </div>
+                            </div>
+
+                            <div class="imgs">
+
+                                <img class="img-esquerda" src="imgs/Hambúrguer-Smash.png" alt="Hambúrguer Smach">
+                                <a href="pagamento.html"><img class="olho" src="imgs/olho.png"></a>
                             </div>
 
                         </div>
-
-                        <div class="imgs">
-
-                            <img class="img-esquerda" src="imgs/Hambúrguer-Smash.png" alt="Hambúrguer Smach">
-                            <a href="pagamento.html"><img class="olho" src="imgs/olho.png"></a>
-                        </div>
-
                     </div>
-                </div>
 
-                <div class="col">
+                    <div class="col">
 
-                    <div id="plebeusSmash2">
+                        <div id="plebeusSmash2">
 
-                        <div class="texto">
+                            <div class="texto">
 
-                            <h3>Cheese Burguer Smash</h3>
-                            <p>Pão dee Cará, Carne Smash de 90g, Queijo e Maionese.</p>
-                            <h4>Serve 1 pessoa</h4>
+                                <h3>Cheese Burguer Smash</h3>
+                                <p>Pão dee Cará, Carne Smash de 90g, Queijo e Maionese.</p>
+                                <h4>Serve 1 pessoa</h4>
 
-                            <div class="teste row">
-                                <div id="preco">
-                                    <p>R$ 30,07</p>
+                                <div class="teste row">
+                                    <div id="preco">
+                                        <p>R$ 30,07</p>
+                                    </div>
+
+                                    <div class="quantidade">
+                                        <button onclick="alterarQuantidade(-1)">-</button>
+                                        <span id="quantidade">0</span>
+                                        <button onclick="alterarQuantidade(1)">+</button>
+                                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                                    </div>
                                 </div>
 
-                                <div class="quantidade">
-                                    <button onclick="alterarQuantidade(-1)">-</button>
-                                    <span id="quantidade">0</span>
-                                    <button onclick="alterarQuantidade(1)">+</button>
-                                    <button class="add-to-cart">Adicionar ao carrinho</button>
-                                </div>
                             </div>
 
+                            <div class="imgs">
+
+                                <img class="img-direita" src="imgs/Hambúrguer-Smash.png" alt="Cheese Burguer Smash">
+                                <img class="olho" src="imgs/olho.png">
+
+                            </div>
+
+
                         </div>
-
-                        <div class="imgs">
-
-                            <img class="img-direita" src="imgs/Hambúrguer-Smash.png" alt="Cheese Burguer Smash">
-                            <img class="olho" src="imgs/olho.png">
-
-                        </div>
-
-
                     </div>
-                </div>
 
-                <div class="col">
+                    <div class="col">
 
-                    <div id="plebeusSmash3">
+                        <div id="plebeusSmash3">
 
-                        <div class="texto">
-                            <h3>Smashed Bacon</h3>
-                            <p>Pão de Cará, Carne Smash de 90g, Queijo e Farofa de Bacon.</p>
-                            <h4>Serve 1 pessoa</h4>
+                            <div class="texto">
+                                <h3>Smashed Bacon</h3>
+                                <p>Pão de Cará, Carne Smash de 90g, Queijo e Farofa de Bacon.</p>
+                                <h4>Serve 1 pessoa</h4>
 
-                            <div class="teste row">
-                                <div id="preco">
-                                    <p>R$ 30,07</p>
+                                <div class="teste row">
+                                    <div id="preco">
+                                        <p>R$ 30,07</p>
+                                    </div>
+
+                                    <div class="quantidade">
+                                        <button onclick="alterarQuantidade(-1)">-</button>
+                                        <span id="quantidade">0</span>
+                                        <button onclick="alterarQuantidade(1)">+</button>
+                                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                                    </div>
                                 </div>
 
-                                <div class="quantidade">
-                                    <button onclick="alterarQuantidade(-1)">-</button>
-                                    <span id="quantidade">0</span>
-                                    <button onclick="alterarQuantidade(1)">+</button>
-                                    <button class="add-to-cart">Adicionar ao carrinho</button>
-                                </div>
                             </div>
-                            
+
+                            <div class="imgs">
+
+                                <img class="img-esquerda" src="imgs/Smashed-Bacon.png" alt="Smashed Bacon">
+                                <img class="olho" src="imgs/olho.png">
+
+                            </div>
+
                         </div>
-
-                        <div class="imgs">
-
-                            <img class="img-esquerda" src="imgs/Smashed-Bacon.png" alt="Smashed Bacon">
-                            <img class="olho" src="imgs/olho.png">
-
-                        </div>
-
                     </div>
-                </div>
 
-                <div class="col">
+                    <div class="col">
 
-                    <div id="plebeusSmash4">
+                        <div id="plebeusSmash4">
 
-                        <div class="texto">
-                            <h3>Cheese Salada Smash</h3>
-                            <p>Pão de Cará, Hambúrguer Smash de 90g, Queijo Prato, Alface, Tomate, Cebola Roxa e
-                                Maionese
-                                Verde.</p>
-                            <h4>Serve 1 pessoa</h4>
+                            <div class="texto">
+                                <h3>Cheese Salada Smash</h3>
+                                <p>Pão de Cará, Hambúrguer de 90g, Queijo Prato, Alface, Tomate, Cebola Roxa e
+                                    Maionese
+                                    Verde.</p>
+                                <h4>Serve 1 pessoa</h4>
 
-                            <div class="teste row">
-                                <div id="preco">
-                                    <p>R$ 34,07</p>
+                                <div class="teste row">
+                                    <div id="preco">
+                                        <p>R$ 34,07</p>
+                                    </div>
+
+                                    <div class="quantidade">
+                                        <button onclick="alterarQuantidade(-1)">-</button>
+                                        <span id="quantidade">0</span>
+                                        <button onclick="alterarQuantidade(1)">+</button>
+                                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                                    </div>
                                 </div>
 
-                                <div class="quantidade">
-                                    <button onclick="alterarQuantidade(-1)">-</button>
-                                    <span id="quantidade">0</span>
-                                    <button onclick="alterarQuantidade(1)">+</button>
-                                    <button class="add-to-cart">Adicionar ao carrinho</button>
-                                </div>
+                            </div>
+
+                            <div class="imgs">
+
+                                <img class="img-direita" src="imgs/Cheese Salada-Smash.png" alt="Cheese Salada Smash">
+                                <img class="olho" src="imgs/olho.png">
+
                             </div>
 
                         </div>
-
-                        <div class="imgs">
-
-                            <img class="img-direita" src="imgs/Cheese Salada-Smash.png" alt="Cheese Salada Smash">
-                            <img class="olho" src="imgs/olho.png">
-
-                        </div>
-
                     </div>
-                </div>
 
-                <div class="col">
+                    <div class="col">
 
-                    <div id="plebeusSmash5">
+                        <div id="plebeusSmash5">
 
-                        <div class="texto">
-                            <h3>Cheese Bacon Smash</h3>
-                            <p>Pão de Cará, Hambúrguer Smash de 90g, Queijo Prato, Candy Bacon e Maionese Verde.</p>
-                            <h4>Serve 1 pessoa</h4>
+                            <div class="texto">
+                                <h3>Cheese Bacon Smash</h3>
+                                <p>Pão de Cará, Hambúrguer Smash de 90g, Queijo Prato, Candy Bacon e Maionese Verde.</p>
+                                <h4>Serve 1 pessoa</h4>
 
-                            <div class="teste row">
-                                <div id="preco">
-                                    <p>R$ 38,07</p>
+                                <div class="teste row">
+                                    <div id="preco">
+                                        <p>R$ 38,07</p>
+                                    </div>
+
+                                    <div class="quantidade">
+                                        <button onclick="alterarQuantidade(-1)">-</button>
+                                        <span id="quantidade">0</span>
+                                        <button onclick="alterarQuantidade(1)">+</button>
+                                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                                    </div>
                                 </div>
 
-                                <div class="quantidade">
-                                    <button onclick="alterarQuantidade(-1)">-</button>
-                                    <span id="quantidade">0</span>
-                                    <button onclick="alterarQuantidade(1)">+</button>
-                                    <button class="add-to-cart">Adicionar ao carrinho</button>
-                                </div>
+                            </div>
+
+                            <div class="imgs">
+
+                                <img class="img-esquerda" src="imgs/Cheese Bacon-Smash.png" alt="Cheese Bacon Smash">
+                                <img class="olho" src="imgs/olho.png">
+
                             </div>
 
                         </div>
-
-                        <div class="imgs">
-
-                            <img class="img-esquerda" src="imgs/Cheese Bacon-Smash.png" alt="Cheese Bacon Smash">
-                            <img class="olho" src="imgs/olho.png">
-
-                        </div>
-
                     </div>
                 </div>
             </div>
+
         </div>
-
     </div>
-
 
     <div id="secao2" class="conteiner d-none">
         <div class="container">
@@ -1439,8 +1441,10 @@
 
     <footer> © Copyright 2025, Todos os direitos reservados</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
