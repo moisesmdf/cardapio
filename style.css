@@ -240,7 +240,7 @@ li:hover {
 }
 
 footer {
-    margin-top: 80px;
+    margin-top: 60px;
     background-color: black;
     color: white;
     text-align: center;
@@ -405,17 +405,7 @@ footer {
     #plebeusSmash1,
     #plebeusSmash3,
     #plebeusSmash5,
-    #plebeus1,
-    #plebeus3,
-    #reisRainhas1,
-    #reisRainhas3,
-    #reisRainhas5,
-    #reisRainhas7,
-    #nobresConvidados1,
-    #nobresConvidados3,
     #escudeiros1,
-    #escudeiros3,
-    #escudeiros5,
     #escudeiros7,
     #milkShake1,
     #milkShake3,
@@ -450,15 +440,7 @@ footer {
 
     /* Estiliza a caixa de produtos */
     #plebeusSmash2,
-    #plebeus2,
-    #plebeus4,
-    #reisRainhas2,
-    #reisRainhas4,
-    #reisRainhas6,
-    #nobresConvidados2,
     #escudeiros2,
-    #escudeiros4,
-    #escudeiros6,
     #milkShake2,
     #milkShake4,
     #sobremesas2,
@@ -487,8 +469,19 @@ footer {
 
 
     }
-    #plebeusSmash5, #plebeusSmash4 {
+    #plebeusSmash5, #plebeusSmash4, #nobresConvidados3,#plebeus2, #plebeus1, #escudeiros5 {
         height: 178px;
+    }
+    #plebeus4,#plebeus3,#reisRainhas2,
+    #reisRainhas4,#reisRainhas1,
+    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6  {
+        height: 190px;
+        width: 100%;
+    }
+
+    #reisRainhas5,
+    #reisRainhas7,#escudeiros3,#escudeiros4 {
+        height: 210px;
     }
 
     .img-esquerda {
@@ -510,6 +503,7 @@ footer {
     .texto h3 {
         font-size: 16px;
         margin: 12px;
+        width: 180px;
 
     }
     /* Infor do produto */
