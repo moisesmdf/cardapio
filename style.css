@@ -761,14 +761,14 @@ footer {
     }
 
     #plebeus4,#plebeus3,#reisRainhas2,
-    #reisRainhas4,#reisRainhas1,
-    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6, #escudeiros3, #escudeiros4   {
+    #reisRainhas4,
+    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6 {
         height: 175px;
         width: 100%;
     }
 
     #reisRainhas5,
-    #reisRainhas7{
+    #reisRainhas7, #reisRainhas1, #escudeiros4, #escudeiros3  {
         height: 190px;
     }
     .te {
@@ -795,6 +795,7 @@ footer {
     .texto h3 {
         font-size: 15px;
         margin: 12px 7px;
+        width: 170px;
 
     }
 
