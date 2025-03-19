@@ -21,7 +21,7 @@
 /* Estiliza a img carrinho */
 
 #carrinho-container {
-    position: fixed;
+    position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
     top: 370px; /* Distância do topo */
     right: 12px; /* Distância da direita */
     z-index: 1050; /* Mantém acima de outros elementos */
@@ -31,7 +31,6 @@
     width: 15px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     cursor: pointer;
-    position: relative;
 }
 
 
@@ -71,7 +70,6 @@
     box-sizing: border-box;
     display: flex;
     margin-top: 30px;
-    margin-left: 25px;
 
 
 }
@@ -245,7 +243,7 @@ li {
     padding: 5px 2px;
     color: #FFFFFF;
     font-family: "Caprasimo", serif;
-    font-size: 13px;
+    font-size: 12px;
     margin: 0 12px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -317,17 +315,19 @@ footer {
     }
 }
 
-
 @media screen and (max-width: 600px) {
+
     #carrinho-container {
-        top: 205px; /* Distância do topo */
-        right: 372px;
+        position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+        top: 188px; /* Distância do topo */
+        right: 7px; /* Distância da direita */
+        z-index: 1050; /* Mantém acima de outros elementos */
     }
     
     #carrinho {
         width: 15px; /* Ajuste o tamanho conforme necessário */
-        top: -18px;
-        left: 365px;
+        height: auto;
+        cursor: pointer;
     }
     ul {
         margin-top: 110px;
@@ -523,16 +523,18 @@ footer {
     .te{
         margin-right: 50px;
     }
-    
+
     #carrinho-container {
-        top: 205px; /* Distância do topo */
-        right: 372px;
+        position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+        top: 188px; /* Distância do topo */
+        right: 7px; /* Distância da direita */
+        z-index: 1050; /* Mantém acima de outros elementos */
     }
     
     #carrinho {
         width: 15px; /* Ajuste o tamanho conforme necessário */
-        top: -18px;
-        left: 365px;
+        height: auto;
+        cursor: pointer;
     }
     ul {
         margin-top: 110px;
@@ -596,11 +598,16 @@ footer {
 
 
 }
+
+.texto p {
+font-size: 15px;
+
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
     #carrinho-container {
-        position: fixed;
+        position: absolute;
         top: 187px; /* Distância do topo */
         right: 10px; /* Distância da direita */
         z-index: 1050; /* Mantém acima de outros elementos */
@@ -611,6 +618,8 @@ footer {
         height: auto;
         cursor: pointer;
     }
+
+
     ul {
         margin-top: 110px;
     }
@@ -791,7 +800,7 @@ footer {
     #reisRainhas4,
     #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6 {
         height: 175px;
-        width: 100%;
+       
     }
 
     #reisRainhas5,
@@ -873,7 +882,23 @@ footer {
     }
 
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 991px) and (max-width: 1200px){
+   .te{
+    margin-right: -20px;
+   }
+
+   #carrinho-container {
+    position: absolute;
+    top: 313px; /* Distância do topo */
+    right: 500px; /* Distância da direita */
+    z-index: 1050; /* Mantém acima de outros elementos */
+}
+
+#carrinho {
+    width: 14px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+}
     #plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
 #escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
 #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
@@ -883,6 +908,7 @@ footer {
     padding: 0 0 0 10px;
     display: flex;
     margin-top: 30px;
+    margin-left: -20px;
 }
 
 /* Estiliza a caixa de produtos */
@@ -930,11 +956,11 @@ footer {
 }
 
 li {
-    padding: 5px 2px;
+    padding: 5px 0;
     color: #FFFFFF;
     font-family: "Caprasimo", serif;
-    font-size: 11px;
-    margin: 0 12px;
+    font-size: 13px;
+    margin: 0 7px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -975,3 +1001,129 @@ li {
 }
 
 }
+@media screen and (min-width: 1400px){
+    /* Estiliza a img carrinho */
+
+#carrinho-container {
+    position: fixed;
+    top: 370px; /* Distância do topo */
+    right: 12px; /* Distância da direita */
+    z-index: 1050; /* Mantém acima de outros elementos */
+}
+
+#carrinho {
+    width: 15px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+}
+    
+    /* Estiliza a caixa de produtos */
+#plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
+#escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
+#bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
+    width: 610px; /* Define a largura da div */
+    height: 220px;
+}
+
+/* Estiliza a caixa de produtos */
+#plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
+#milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
+    width: 610px; /* Define a largura da div */
+    height: 220px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .texto h3 {
+
+        font-size: 22px;
+        margin: 14px 0 0 12px;
+    
+    
+    }
+    
+    .texto h4 {
+        font-size: 17px;
+        margin: 12px 0 0 12px;
+    
+    }
+    
+    /* Infor do produto */
+    .texto p {
+        font-size: 19px;;
+        width: 300px;
+    
+    }
+    
+    
+    .img-direita {
+        margin-left: 120px;
+        margin-top: 7px;
+        width: 200px;
+        height: 165px;
+    
+    }
+    
+    .img-esquerda {
+        margin-left: 120px;
+        margin-top: 7px;
+        width: 200px;
+        height: 165px;
+
+    
+    }
+
+    .olho {
+        margin-top: 10px;
+        margin-left: 308px;
+        width: 25px;
+    }
+    .quantidade button {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        
+    
+    }
+    
+    #preco {
+        margin-top: 8px;
+        
+    
+    }
+    
+    #quantidade {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .quantidade {
+        margin-left: 120px;
+        margin-top: -50px;
+        position: static;
+    }
+    
+    
+    button.add-to-cart {
+        font-size: 12px;
+        margin-left: 10px;
+
+    }
+    
+    #carrinho-container {
+        position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+        top: 402px; /* Distância do topo */
+        right: 12px; /* Distância da direita */
+        z-index: 1050; /* Mantém acima de outros elementos */
+    }
+    
+    #carrinho {
+        width: 15px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+
