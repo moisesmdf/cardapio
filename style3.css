@@ -1,3 +1,5 @@
+
+
 .cabecalho {
     background-color: black;
     color: white;
@@ -32,11 +34,7 @@
 }
 
 
-
-
-#dinheiro,
-#pix,
-#cartao {
+#dinheiro, #pix, #cartao {
     display: flex;
     border: 3px solid rgb(0, 0, 0);
     /* Define a cor e espessura da borda */
@@ -45,11 +43,12 @@
     width: 300px;
     height: 67px;
     justify-content: center;
+    
 
 
 }
 #dinheiro {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .formaPagamento {
@@ -93,6 +92,7 @@
     width: 100%;
     box-shadow: 0px 0px 5px ;
     margin-bottom: 40px;
+   
 }
 
 .preco {
@@ -201,14 +201,57 @@
     background-color: black;
     color: white;
     text-align: center;
+    height: 30px;
+    padding-top: 2px;
+    
  }
  #botoes {
     margin-left: 90px;
     margin-top: 45px;
  }
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 767px){
+    .cabecalho {
+        max-height: 220px;
+    }
+    
+    #img-logo {
+        width: 200px;
+        position: relative;
+        top: -20px;
+    }
+    
+    #nome-carrinho {
+        font-size: 16px;
+        padding-top: 5px;
+        
+    }
+    
+    .conteiners {
+        padding: 0 30px;
+    }
+    .pedido, .formaPagamento{
+        height: 340px;
+       
+    }
+
+    .detalhes {
+        height: 360px;
+       
+    }
+    .hamburguer, .cocaCola {
+        height: 90px;
+    }
+    .titulo {
+        font-size: 17px;
+        height: 35px;
+        padding-top: 7px;
+    }
     #titulo-produto1 {
-        font-size: 15px;
+        font-size: 14px;
+    }
+    #titulo-produto2 {
+        margin-right: 90px;
+        font-size: 14px;
     }
     #img-logo {
         max-width:300px;
@@ -218,14 +261,115 @@
     .cabecalho {
         height: 345px;
     }
+    #nome-carrinho {
+        margin-bottom: 50px;
+    }
+    .pedido {
+        height: 360px;
+        width: 100%;
+    }
+    .img {
+        width: 110px;
+        height: 90px;
+        padding: 10px 15px 15px 12px;
+    }
+    .formas {
+        margin-top: 60px;
+    }
+    #dinheiro, #pix, #cartao {
+        margin: 20px 20px;
+        width: 230px;
+        height: 50px;
+    
+    }
+
+    .nomeFormaPag {
+        font-weight: bold;
+        font-size: 21px;
+        margin-top: 7px;
+    }
+    
+    .fotoFormaPag1 {
+        width: 50px;
+        margin-right: 10px;
+    }
+    .fotoFormaPag2 {
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+        margin-right: 20px;
+
+    }
+    .fotoFormaPag3 {
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+        
+        margin-right: 20px;
+    }
+    #valorTotal {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 5px;
+     }
+     
+     button {
+        text-align: right;
+     }
+     
+    
+     .detalhe-produto p {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 12px;
+     }
+     .titulo-descricao {
+        margin-left: 13px;
+        margin-top: 20px;
+       font-size: 15px;
+     }
+     #precoCoca {
+        margin-left: 145px;
+     }
+    
+     #botao-cancelar {
+        background-color: red;
+     }
+    
+     #botao-proceguir {
+        background-color: rgb(0, 255, 51);
+        margin-left: 13px;
+        
+     }
+    
+     #botao-cancelar, #botao-proceguir {
+        width: 80px;
+        border-radius: 5px;
+        padding: 3px 13px 3px 10px;
+        font-size: 13px;
+     }
+
+     #botoes {
+        margin-left: 90px;
+        margin-top: 35px;
  }
+
+ footer {
+    height: 25px;
+    padding-top: 2px;
+    font-size: 12px;
+    
+ }
+}
  @media screen and (min-width: 768px) and (max-width: 1024px){
     .detalhes {
         width: 500px;
       margin-left: 90px;
     }
-    .hamburguer {
-        height: 100%;
+    .hamburguer, .cocaCola {
+        height: 105px;
     }
     #titulo-produto1 {
         font-size: 15px;
