@@ -815,6 +815,197 @@ button.add-to-cart {
         margin-left: -2px;
     }
 
+    #plebeusSmash1,
+    #plebeusSmash3,
+    #plebeus1,
+    #plebeus3,
+    #reisRainhas1,
+    #reisRainhas3,
+    #reisRainhas5,
+    #reisRainhas7,
+    #nobresConvidados1,
+    #nobresConvidados3,
+    #escudeiros1,
+    #escudeiros3,
+    #escudeiros5,
+    #escudeiros7,
+    #milkShake1,
+    #milkShake3,
+    #sobremesas1,
+    #sobremesas3,
+    #cerveja1,
+    #cerveja3,
+    #cerveja5,
+    #cerveja7,
+    #cerveja9,
+    #bebida1,
+    #bebida3,
+    #bebida5,
+    #bebida7,
+    #bebida9,
+    #bebida11,
+    #bebida13,
+    #bebida15,
+    #bebida17 {
+        min-width: 100%;
+        /* Define a largura da div */
+        height: 145px;
+        /* Define a altura da div */
+        border: 2px solid rgb(242, 242, 242);
+        /* Define a borda */
+        padding: 0 0 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        
+
+    }
+
+    /* Estiliza a caixa de produtos */
+    #plebeusSmash2,
+    #plebeus2,
+    #plebeus4,
+    #reisRainhas2,
+    #reisRainhas4,
+    #reisRainhas6,
+    #nobresConvidados2,
+    #escudeiros2,
+    #escudeiros4,
+    #escudeiros6,
+    #milkShake2,
+    #milkShake4,
+    #sobremesas2,
+    #cerveja2,
+    #cerveja4,
+    #cerveja6,
+    #cerveja8,
+    #bebida2,
+    #bebida4,
+    #bebida6,
+    #bebida8,
+    #bebida10,
+    #bebida12,
+    #bebida14,
+    #bebida16 {
+        min-width: 100%;
+        /* Define a largura da div */
+        height: 145px;
+        /* Define a altura da div */
+        border: 2px solid rgb(242, 242, 242);
+        /* Define a borda */
+        padding: 0 0 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        
+
+
+    }
+
+    #plebeusSmash5, #plebeusSmash4, #nobresConvidados3,#plebeus2, #plebeus1, #escudeiros5 {
+        height: 160px;
+    }
+
+    #plebeus4,#plebeus3,#reisRainhas2,
+    #reisRainhas4,
+    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6 {
+        height: 175px;
+       
+    }
+
+    #reisRainhas5,
+    #reisRainhas7, #reisRainhas1, #escudeiros4, #escudeiros3  {
+        height: 190px;
+    }
+
+    #secao1,
+    #secao2,
+    #secao3,
+    #secao4,
+    #secao5,
+    #secao6,
+    #secao7,
+    #secao8,
+    #secao9 {
+   
+        margin: 0;
+
+
+    }
+    .te {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .img-direita {
+        padding: 15px 0 0 0;
+        margin-left: -38px;
+        width: 110px;
+        height: 100px;
+    }
+
+    .img-esquerda {
+        padding: 15px 0 0 0;
+        margin-left: -35px;
+        width: 110px;
+        height: 100px;
+
+    }
+
+    .texto h3 {
+        font-size: 15px;
+        margin: 12px 7px;
+        width: 170px;
+
+    }
+
+    /* Infor do produto */
+    .texto p {
+        margin: 7px;
+        font-family: "Cabin", serif;
+        font-weight: 900;
+        color: #858585;
+        font-size: 11px;
+        width: 170px;
+
+    }
+    
+    .texto h4{
+        font-size: 12px;
+        margin: 12px 7px;
+    }
+    .olho {
+        margin-top: 5px;
+        margin-left: 65px;
+        width: 15px;
+        margin-right: 7px;
+    }
+
+    .quantidade button {
+        font-size: 13px;
+    }
+    
+    #preco {
+        margin-top: -5px;
+    
+    }
+    
+    #quantidade {
+        font-size: 13px;
+        color: #000000;
+    }
+    
+    .quantidade {
+        margin-left: 75px;
+        margin-top: -28px;
+        
+    }
+    
+    button.add-to-cart {
+        margin-left: 8px;
+        font-size: 8px;
+        
+    }
+
     
 }
 @media screen and (min-width: 991px) and (max-width: 1200px){
