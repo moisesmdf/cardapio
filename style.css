@@ -67,7 +67,6 @@
     height: 200px;
     box-shadow: 0px 0px 3px ;
     padding: 0 0 0 10px;
-    box-sizing: border-box;
     display: flex;
     margin-top: 30px;
 
@@ -102,8 +101,8 @@
 #secao7,
 #secao8,
 #secao9 {
-    display: grid;
-
+   
+padding: 20px;
 
 
 }
@@ -315,11 +314,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 600px){
     #carrinho-container {
         position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
-        top: 188px; /* Distância do topo */
+        top: 124px; /* Distância do topo */
         right: 7px; /* Distância da direita */
         z-index: 1050; /* Mantém acima de outros elementos */
     }
@@ -368,161 +367,8 @@ footer {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
-    .d-block {
-        height: 160px;
-        width: 100%;
-    }
-
-    /* Estiliza a caixa de produtos */
-    #plebeusSmash1,
-    #plebeusSmash3,
-    #plebeusSmash5,
-    #escudeiros1,
-    #escudeiros7,
-    #milkShake1,
-    #milkShake3,
-    #sobremesas1,
-    #sobremesas3,
-    #cerveja1,
-    #cerveja3,
-    #cerveja5,
-    #cerveja7,
-    #cerveja9,
-    #bebida1,
-    #bebida3,
-    #bebida5,
-    #bebida7,
-    #bebida9,
-    #bebida11,
-    #bebida13,
-    #bebida15,
-    #bebida17 {
-        width: 100%;
-        /* Define a largura da div */
-        height: 160px;
-        /* Define a altura da div */
-        border: 2px solid rgb(242, 242, 242);
-        /* Define a borda */
-        padding: 0 0 0 10px;
-        box-sizing: border-box;
-        display: flex;
-
-
-    }
-
-    /* Estiliza a caixa de produtos */
-    #plebeusSmash2,
-    #escudeiros2,
-    #milkShake2,
-    #milkShake4,
-    #sobremesas2,
-    #cerveja2,
-    #cerveja4,
-    #cerveja6,
-    #cerveja8,
-    #bebida2,
-    #bebida4,
-    #bebida6,
-    #bebida8,
-    #bebida10,
-    #bebida12,
-    #bebida14,
-    #bebida16 {
-        width: 100%;
-        /* Define a largura da div */
-        height: 160px;
-        /* Define a altura da div */
-        border: 2px solid rgb(242, 242, 242);
-        /* Define a borda */
-        padding: 0 0 0 10px;
-        box-sizing: border-box;
-        display: flex;
-
-
-
-    }
-    #plebeusSmash5, #plebeusSmash4, #nobresConvidados3,#plebeus2, #plebeus1, #escudeiros5 {
-        height: 178px;
-    }
-
-    #plebeus4,#plebeus3,#reisRainhas2,
-    #reisRainhas4,#reisRainhas1,
-    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6  {
-        height: 190px;
-        width: 100%;
-    }
-
-    #reisRainhas5,
-    #reisRainhas7,#escudeiros3,#escudeiros4 {
-        height: 210px;
-    }
-
-    .img-esquerda {
-        padding: 15px 0 0 0;
-        margin-left: -26px;
-        width: 140px;
-        height: 120px;
-
-    }
-
-    .img-direita {
-        padding: 15px 0 0 0;
-        margin-left: -26px;
-        width: 140px;
-        height: 120px;
-
-    }
-
-    .texto h3 {
-        font-size: 16px;
-        margin: 12px;
-        width: 180px;
-
-    }
-    /* Infor do produto */
-    .texto p {
-        margin: 15px 0 15px 12px;
-        font-size: 12px;
-        width: 185px;
-    }
-
-    .texto h4 {
-        font-size: 13px;
-    }
-
-    .olho {
-        margin-top: 3px;
-        margin-left: 106px;
-        width: 18px;
-    }
-    .quantidade button {
-        font-size: 15px;
-    }
-    
-    #preco {
-        margin-top: -8px;
-    
-    }
-    
-    #quantidade {
-        font-size: 15px;
-    }
-    
-    .quantidade {
-        margin-left: 85px;
-        
-    }
-    
-    button.add-to-cart {
-        margin-left: 8px;
-        font-size: 8px;
-    }
 }
-
 @media screen and (min-width: 601px) and (max-width: 767px){
-    .te{
-        margin-right: 50px;
-    }
 
     #carrinho-container {
         position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
@@ -702,9 +548,7 @@ font-size: 15px;
         margin-left: -2px;
     }
 
-    .d-block {
-        height: 160px;
-        width: 100%;
+    
     }
 
     #plebeusSmash1,
