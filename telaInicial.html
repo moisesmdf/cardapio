@@ -91,15 +91,18 @@
     </header>
 
 
+    <div class="teste">
+        <h1 id="titulo-secao">Plebeus Smash</h1>
 
-    <h1 id="titulo-secao">Plebeus Smash</h1>
-
-
-    <div id="carrinho-container">
         <a href="pagamento.html">
             <img id="carrinho" src="imgs/carrinho.png" alt="Carrinho de compras">
         </a>
+
     </div>
+    
+
+
+    
     <div class="secoes">
         <div id="secao1" class="conteiner">
             <div class="container">
@@ -114,6 +117,19 @@
                                 <p>Pão de Cará, Carne Smash de 90g e Maionese Verde </p>
                                 <h4>Serve 1 pessoa</h4>
 
+
+                                <div class="preco-qtde row">
+                                    <div id="preco">
+                                        <p>R$ 34,07</p>
+                                    </div>
+
+                                    <div class="quantidade">
+                                        <button onclick="alterarQuantidade(-1)">-</button>
+                                        <span id="quantidade">0</span>
+                                        <button onclick="alterarQuantidade(1)">+</button>
+                                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="imgs">
