@@ -275,6 +275,7 @@
     }
     .formas {
         margin-top: 60px;
+        justify-content: center;
     }
     #dinheiro, #pix, #cartao {
         margin: 20px 20px;
