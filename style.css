@@ -1,9 +1,6 @@
 /* Esconde todos os elementos inicialmente */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caprasimo&display=swap');
-.te{
-    margin-left: 2px;
-    margin-right: 10px;
-}
+
 .carousel {
     max-height: 100%;
 }
@@ -24,17 +21,14 @@
 
 /* Estiliza a img carrinho */
 
-#carrinho-container {
-    position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
-    top: 370px; /* Distância do topo */
-    right: 12px; /* Distância da direita */
-    z-index: 1050; /* Mantém acima de outros elementos */
-}
-
 #carrinho {
     width: 15px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     cursor: pointer;
+    right: 12px;
+    position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+    margin-top: 5px;
+    z-index: 1050;
 }
 
 
@@ -49,7 +43,7 @@
 #escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
 #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
     width: 100%; /* Define a largura da div */
-    height: 200px;
+    height: 235px;
     box-shadow: 0px 0px 3px ;
     padding: 0 0 0 10px;
     display: flex;
@@ -67,8 +61,8 @@
 /* Estiliza a caixa de produtos */
 #plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
 #milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
-    width: 100%; /* Define a largura da div */
-    height: 200px;
+    max-width: 100%; /* Define a largura da div */
+    height: 235px;
     box-shadow: 0px 0px 3px ;
     padding: 0 0 0 10px;
     display: flex;
@@ -80,20 +74,21 @@
     margin-right: 25px;
 }
 
-#plebeusSmash5, #plebeusSmash4, #nobresConvidados3, #plebeus1, #escudeiros5 {
-    height: 220px;
+#plebeusSmash5, #plebeusSmash4, #nobresConvidados3, #plebeus1, #plebeus2, #escudeiros5,#sobremesas2,#sobremesas1 {
+    height: 265px;
 }
 
 #plebeus4,#plebeus3,#reisRainhas2,
-#reisRainhas4,#reisRainhas1,
-#reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6  {
-    height: 190px;
+#reisRainhas4,#reisRainhas1,#reisRainhas6, #nobresConvidados1, #escudeiros6,#escudeiros4 {
+    height: 293px;
 
 }
 
-#reisRainhas5,
-#reisRainhas7,#escudeiros3,#escudeiros4 {
-    height: 210px;
+
+
+#reisRainhas5,#reisRainhas3,#nobresConvidados2,
+#reisRainhas7,#escudeiros3 {
+    height: 320px;
 }
 
 #secao1,
@@ -106,20 +101,20 @@
 #secao8,
 #secao9 {
    
-margin: 15px;
+margin: 14px;
 
 
 }
 .texto h3 {
 
-    font-size: 20px;
+    font-size: 26px;
     margin: 14px 0 0 12px;
 
 
 }
 
 .texto h4 {
-    font-size: 14px;
+    font-size: 18px;
     margin: 12px 0 0 12px;
 
 }
@@ -128,27 +123,28 @@ margin: 15px;
 .texto p {
     margin: 18px 0  18px 12px;
     font-family: "Cabin", serif;
-    font-weight: 900;
     color: #858585;
-    width: 250px;
+    width: 320px;
+    font-size: 21px;
+    font-weight: 900;
 
 }
 
 
 .img-direita {
     padding: 15px 0 0 0;
-    margin-left: 60px;
+    margin-left: 45px;
     width: 200px;
-    height: 160px;
+    height: 180px;
     
 
 }
 
 .img-esquerda {
-    padding: 15px 0 0 0;
-    margin-left: 60px;
+    padding: 20px 0 0 0;
+    margin-left: 45px;
     width: 200px;
-    height: 160px;
+    height: 180px;
 
 }
 
@@ -157,7 +153,7 @@ margin: 15px;
     border: none;
     background-color: white;
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 25px;
     
 
 }
@@ -169,14 +165,14 @@ margin: 15px;
 }
 
 #quantidade {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .quantidade {
-    margin-left: 100px;
-    margin-top: -43px;
+    margin-left: 130px;
+    margin-top: -56px;
     position: static;
     font-weight: bold;
 }
@@ -186,7 +182,7 @@ button.add-to-cart {
     background: linear-gradient(to bottom, #666, #000); /* Gradiente do cinza ao preto */
     color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
-    font-size: 9px;
+    font-size: 12px;
     margin-left: 10px;
 }
 
@@ -204,8 +200,9 @@ button.add-to-cart {
 
 .olho {
     margin-top: 10px;
-    margin-left: 250px;
-    width: 20px;
+    margin-left: 230px;
+    margin-right: 15px;
+    width: 25px;
 }
 
 
@@ -245,7 +242,7 @@ li {
     padding: 5px 2px;
     color: #FFFFFF;
     font-family: "Caprasimo", serif;
-    font-size: 12px;
+    font-size: 15px;
     margin: 0 12px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -318,7 +315,238 @@ footer {
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 399px) {
+      
+    #carrinho {
+        width: 15px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        cursor: pointer;
+        right: 12px;
+        position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+        margin-top: 5px;
+        z-index: 1050;
+    }
+    ul {
+        margin-top: 110px;
+    }
+    .active-link {
+        color: white;
+        background-color: black;
+        padding: 7px 160px 7px 10px;
+    }
+    a {
+        color: #000000;
+    }
+
+    .navbar {
+        background-color: black !important;
+    }
+
+    .navbar-toggler {
+        border: 1px solid white;
+        /* Define a cor e espessura da borda */
+        border-radius: 3px;
+        /* Arredondar as bordas */
+        padding: 5px;
+        /* Ajuste de tamanho */
+        width: 17px;
+        height: 17px;
+        margin-top: -2px;
+    }
+
+    .navbar-toggler-icon {
+        width: 10px;
+        /* Ajuste o tamanho conforme necessário */
+        height: 10px;
+        /* Ajuste o tamanho conforme necessário */
+        color: rgb(255, 255, 255);
+        margin-top: -20px;
+        margin-left: -2px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    #plebeusSmash1,
+    #plebeusSmash3,
+    #plebeus1,
+    #plebeus3,
+    #reisRainhas1,
+    #reisRainhas3,
+    #reisRainhas5,
+    #reisRainhas7,
+    #nobresConvidados1,
+    #nobresConvidados3,
+    #escudeiros1,
+    #escudeiros3,
+    #escudeiros5,
+    #escudeiros7,
+    #milkShake1,
+    #milkShake3,
+    #sobremesas1,
+    #sobremesas3,
+    #cerveja1,
+    #cerveja3,
+    #cerveja5,
+    #cerveja7,
+    #cerveja9,
+    #bebida1,
+    #bebida3,
+    #bebida5,
+    #bebida7,
+    #bebida9,
+    #bebida11,
+    #bebida13,
+    #bebida15,
+    #bebida17 {
+        width: 100%;
+        /* Define a largura da div */
+        height: 120px;
+        /* Define a altura da div */
+        border: 2px solid rgb(242, 242, 242);
+        /* Define a borda */
+        padding: 0 0 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        
+
+    }
+
+    /* Estiliza a caixa de produtos */
+    #plebeusSmash2,
+    #plebeus2,
+    #plebeus4,
+    #reisRainhas2,
+    #reisRainhas4,
+    #reisRainhas6,
+    #nobresConvidados2,
+    #escudeiros2,
+    #escudeiros4,
+    #escudeiros6,
+    #milkShake2,
+    #milkShake4,
+    #sobremesas2,
+    #cerveja2,
+    #cerveja4,
+    #cerveja6,
+    #cerveja8,
+    #bebida2,
+    #bebida4,
+    #bebida6,
+    #bebida8,
+    #bebida10,
+    #bebida12,
+    #bebida14,
+    #bebida16 {
+        width: 100%;
+        /* Define a largura da div */
+        height: 120px;
+        /* Define a altura da div */
+        border: 2px solid rgb(242, 242, 242);
+        /* Define a borda */
+        padding: 0 0 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        
+
+
+    }
+
+    #plebeusSmash5, #plebeusSmash4, #nobresConvidados3,#plebeus2, #plebeus1, #escudeiros5 {
+        height: 130px;
+    }
+
+    #plebeus4,#plebeus3,#reisRainhas2,
+    #reisRainhas4,
+    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6 {
+        height: 175px;
+       
+    }
+
+    #reisRainhas5,
+    #reisRainhas7, #reisRainhas1, #escudeiros4, #escudeiros3  {
+        height: 190px;
+    }
+    li {
+        font-size: 8px;
+    }
+
+
+    .img-direita {
+        padding: 15px 0 0 0;
+        margin-left: -32px;
+        width: 90px;
+        height: 88px;
+    }
+
+    .img-esquerda {
+        padding: 15px 0 0 0;
+        margin-left: -32px;
+        width: 90px;
+        height: 88px;
+
+    }
+
+    .texto h3 {
+        font-size: 12px;
+        margin: 12px 7px;
+        width: 170px;
+
+    }
+
+    /* Infor do produto */
+    .texto p {
+        margin: 7px;
+        font-family: "Cabin", serif;
+        font-weight: 900;
+        color: #858585;
+        font-size: 8px;
+        width: 125px;
+
+    }
+    
+    .texto h4{
+        font-size: 8px;
+        margin: 12px 7px;
+    }
+    .olho {
+        margin-top: 5px;
+        margin-left: 50px;
+        width: 13px;
+        margin-right: 7px;
+    }
+
+    .quantidade button {
+        font-size: 10px;
+    }
+    
+    #preco {
+        margin-top: -5px;
+    
+    }
+    
+    #quantidade {
+        font-size: 10px;
+        color: #000000;
+    }
+    
+    .quantidade {
+        margin-left: 50px;
+        margin-top: -27px;
+        
+    }
+    
+    button.add-to-cart {
+        margin-left: 5px;
+        font-size: 5px;
+        
+    }
+
+    footer {
+        font-size: 8px;
+    }
+
+
+}
+@media screen and (min-width: 400px) and (max-width: 600px){
     
     #carrinho {
         width: 15px; /* Ajuste o tamanho conforme necessário */
@@ -721,7 +949,7 @@ button.add-to-cart {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 989px) {
     #carrinho {
         width: 15px; /* Ajuste o tamanho conforme necessário */
         height: auto;
@@ -1008,7 +1236,7 @@ button.add-to-cart {
 
     
 }
-@media screen and (min-width: 991px) and (max-width: 1200px){
+@media screen and (min-width: 990px) and (max-width: 1200px){
 
     #carrinho {
         width: 15px; /* Ajuste o tamanho conforme necessário */
@@ -1023,7 +1251,7 @@ button.add-to-cart {
 #escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
 #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
     width: 100%; /* Define a largura da div */
-    height: 170px;
+    height: 175px;
     box-shadow: 0px 0px 3px ;
     padding: 0 0 0 10px;
     display: flex;
@@ -1035,7 +1263,7 @@ button.add-to-cart {
 #plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
 #milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
     width: 100%; /* Define a largura da div */
-    height: 170px;
+    height: 175px;
     box-shadow: 0px 0px 3px ;
     padding: 0 0 0 10px;
     box-sizing: border-box;
@@ -1060,17 +1288,17 @@ button.add-to-cart {
 
 
 .img-direita {
-    padding: 15px 0 0 0;
-    margin-left: 30px;
+    padding: 15px 15px 0 0;
+    margin-left: 22px;
     width: 150px;
     height: 130px;
 
 }
 
 .img-esquerda {
-    padding: 15px 0 0 0;
-    margin-left: 30px;
-    width: 150px;
+    padding: 15px 15px 0 0;
+    margin-left: 17px;
+    width: 160px;
     height: 130px;
 
 }
@@ -1079,7 +1307,7 @@ li {
     padding: 5px 0;
     color: #FFFFFF;
     font-family: "Caprasimo", serif;
-    font-size: 13px;
+    font-size: 12px;
     margin: 0 7px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -1087,7 +1315,7 @@ li {
 
 .texto h3 {
 
-    font-size: 20px;
+    font-size: 19px;
     margin: 12px 0 0 12px;
 
 
@@ -1110,7 +1338,7 @@ li {
 }
 .olho {
     margin-top: 10px;
-    margin-left: 160px;
+    margin-left: 135px;
     width: 20px;
 }
 
@@ -1120,8 +1348,10 @@ li {
     position: static;
 }
 
+
 }
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1201px) and (max-width: 1330px) {
+
     #carrinho {
         width: 15px; /* Ajuste o tamanho conforme necessário */
         height: auto;
@@ -1133,98 +1363,150 @@ li {
     }
     
     /* Estiliza a caixa de produtos */
-#plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
-#escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
-#bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
-    width: 610px; /* Define a largura da div */
-    height: 220px;
-}
-
-/* Estiliza a caixa de produtos */
-#plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
-#milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
-    width: 610px; /* Define a largura da div */
-    height: 220px;
+    #plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
+    #escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
+    #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
+        width: 100%; /* Define a largura da div */
+        height: 200px;
+        box-shadow: 0px 0px 3px ;
+        padding: 0 0 0 10px;
+        display: flex;
+        margin-top: 30px;
+        padding: 18px 40px 0 18px;
+        
+        
+    }
+    
+    /* Estiliza a caixa de produtos */
+    #plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
+    #milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
+        width: 100%; /* Define a largura da div */
+        height: 200px;
+        box-shadow: 0px 0px 3px ;
+        padding: 0 0 0 10px;
+        display: flex;
+        margin-top: 30px;
+        padding: 17px 40px 0 15px;
+    
+    }
+    .te {
+        margin-right: 25px;
+    }
+    
+    #plebeusSmash5, #plebeusSmash4, #nobresConvidados3, #plebeus1, #escudeiros5 {
+        height: 220px;
+    }
+    
+    #plebeus4,#plebeus3,#reisRainhas2,
+    #reisRainhas4,#reisRainhas1,
+    #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6  {
+        height: 190px;
+    
+    }
+    
+    #reisRainhas5,
+    #reisRainhas7,#escudeiros3,#escudeiros4 {
+        height: 210px;
+    }
+    
+    #secao1,
+    #secao2,
+    #secao3,
+    #secao4,
+    #secao5,
+    #secao6,
+    #secao7,
+    #secao8,
+    #secao9 {
+       
+    margin: 14px;
+    
+    
     }
 
     li {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .texto h3 {
-
-        font-size: 22px;
-        margin: 14px 0 0 12px;
+        font-size: 20px;
+        margin: 0 0 0 12px;
     
     
     }
     
     .texto h4 {
-        font-size: 17px;
-        margin: 12px 0 0 12px;
+        font-size: 15px;
+        margin: 4px 0 0 12px;
     
     }
     
     /* Infor do produto */
     .texto p {
-        font-size: 19px;;
-        width: 300px;
-    
+        margin: 15px 0  15px 12px;
+        font-family: "Cabin", serif;
+        font-size: 17px;
+        color: #858585;
+        width: 260px;
     }
     
     
     .img-direita {
-        margin-left: 120px;
-        margin-top: 7px;
-        width: 200px;
-        height: 165px;
+        padding: 0;
+    
+        width:180px;
+        height: 140px
+        
     
     }
     
     .img-esquerda {
-        margin-left: 120px;
-        margin-top: 7px;
-        width: 200px;
-        height: 165px;
-
-    
+        padding: 0;
+      
+        width:180px;
+        height: 140px;
     }
-
     .olho {
         margin-top: 10px;
-        margin-left: 308px;
-        width: 25px;
+        margin-left: 225px;
+        width: 20px;
     }
+    
     .quantidade button {
+        color: rgb(0, 0, 0);
+        border: none;
+        background-color: white;
         margin-bottom: 10px;
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 17px;
         
     
     }
     
     #preco {
-        margin-top: 8px;
-        
+        margin-top: 5px;
     
     }
     
     #quantidade {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
     }
     
     .quantidade {
-        margin-left: 120px;
-        margin-top: -50px;
+        margin-left: 100px;
+        margin-top: -43px;
         position: static;
+        font-weight: bold;
     }
     
     
     button.add-to-cart {
-        font-size: 12px;
+        background: linear-gradient(to bottom, #666, #000); /* Gradiente do cinza ao preto */
+        color: white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+        font-size: 9px;
         margin-left: 10px;
-
     }
     
     #carrinho-container {
@@ -1239,6 +1521,180 @@ li {
         height: auto;
         cursor: pointer;
     }
+
+
+    
+}
+@media screen and (min-width: 1331px) and (max-width: 1400px){
+    #carrinho {
+        width: 15px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        cursor: pointer;
+        right: 12px;
+        position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+        margin-top: 5px;
+        z-index: 1050;
+    }
+    
+     /* Estiliza a caixa de produtos */
+     #plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
+     #escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
+     #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
+         width: 100%; /* Define a largura da div */
+         height: 200px;
+         box-shadow: 0px 0px 3px ;
+         padding: 0 0 0 10px;
+         display: flex;
+         margin-top: 30px;
+         padding: 18px 40px 0 18px;
+         
+         
+     }
+     
+     /* Estiliza a caixa de produtos */
+     #plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
+     #milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
+         width: 100%; /* Define a largura da div */
+         height: 200px;
+         box-shadow: 0px 0px 3px ;
+         padding: 0 0 0 10px;
+         display: flex;
+         margin-top: 30px;
+         padding: 17px 40px 0 15px;
+     
+     }
+     .te {
+         margin-right: 25px;
+     }
+     
+     #plebeusSmash5, #plebeusSmash4, #nobresConvidados3, #plebeus1, #escudeiros5 {
+         height: 220px;
+     }
+     
+     #plebeus4,#plebeus3,#reisRainhas2,
+     #reisRainhas4,#reisRainhas1,
+     #reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2,  #escudeiros6  {
+         height: 190px;
+     
+     }
+     
+     #reisRainhas5,
+     #reisRainhas7,#escudeiros3,#escudeiros4 {
+         height: 210px;
+     }
+     
+     #secao1,
+     #secao2,
+     #secao3,
+     #secao4,
+     #secao5,
+     #secao6,
+     #secao7,
+     #secao8,
+     #secao9 {
+        
+     margin: 14px;
+     
+     
+     }
+ 
+     li {
+         font-size: 13px;
+     }
+ 
+     .texto h3 {
+         font-size: 20px;
+         margin: 0 0 0 12px;
+     
+     
+     }
+     
+     .texto h4 {
+         font-size: 15px;
+         margin: 4px 0 0 12px;
+     
+     }
+     
+     /* Infor do produto */
+     .texto p {
+         margin: 15px 0  15px 12px;
+         font-family: "Cabin", serif;
+         font-size: 17px;
+         color: #858585;
+         width: 260px;
+     }
+     
+     
+     .img-direita {
+         padding: 0;
+     
+         width:180px;
+         height: 140px
+         
+     
+     }
+     
+     .img-esquerda {
+         padding: 0;
+       
+         width:180px;
+         height: 140px;
+     }
+     .olho {
+         margin-top: 10px;
+         margin-left: 225px;
+         width: 20px;
+     }
+     
+     .quantidade button {
+         color: rgb(0, 0, 0);
+         border: none;
+         background-color: white;
+         margin-bottom: 10px;
+         font-size: 17px;
+         
+     
+     }
+     
+     #preco {
+         margin-top: 5px;
+     
+     }
+     
+     #quantidade {
+         font-size: 17px;
+         font-weight: bold;
+         font-family: 'Courier New', Courier, monospace;
+     }
+     
+     .quantidade {
+         margin-left: 100px;
+         margin-top: -43px;
+         position: static;
+         font-weight: bold;
+     }
+     
+     
+     button.add-to-cart {
+         background: linear-gradient(to bottom, #666, #000); /* Gradiente do cinza ao preto */
+         color: white;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+         font-size: 9px;
+         margin-left: 10px;
+     }
+     
+     #carrinho-container {
+         position: absolute; /* Agora, ele fica posicionado dentro de um contêiner específico */
+         top: 402px; /* Distância do topo */
+         right: 12px; /* Distância da direita */
+         z-index: 1050; /* Mantém acima de outros elementos */
+     }
+     
+     #carrinho {
+         width: 15px; /* Ajuste o tamanho conforme necessário */
+         height: auto;
+         cursor: pointer;
+     }
 }
 
 
