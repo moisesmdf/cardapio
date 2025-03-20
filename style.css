@@ -170,18 +170,22 @@ margin: 15px;
 
 #quantidade {
     font-size: 17px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .quantidade {
     margin-left: 100px;
     margin-top: -43px;
     position: static;
+    font-weight: bold;
 }
 
 
 button.add-to-cart {
-    background-color: black;
+    background: linear-gradient(to bottom, #666, #000); /* Gradiente do cinza ao preto */
     color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
     font-size: 9px;
     margin-left: 10px;
 }
@@ -530,13 +534,14 @@ footer {
     
     .quantidade {
         margin-left: 75px;
-        margin-top: -30px;
+        margin-top: -28px;
         
     }
     
     button.add-to-cart {
         margin-left: 8px;
         font-size: 8px;
+        
     }
 
 
@@ -591,34 +596,129 @@ footer {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
-    .d-block {
-        height: 160px;
-        width: 100%;
-    }
-
     /* Estiliza a caixa de produtos */
 #plebeusSmash1, #plebeusSmash3, #plebeusSmash5, #plebeus1, #plebeus3, #reisRainhas1, #reisRainhas3, #reisRainhas5, #reisRainhas7, #nobresConvidados1, #nobresConvidados3, 
 #escudeiros1, #escudeiros3, #escudeiros5, #escudeiros7, #milkShake1, #milkShake3, #sobremesas1, #sobremesas3, #cerveja1, #cerveja3, #cerveja5, #cerveja7, #cerveja9, 
 #bebida1, #bebida3, #bebida5, #bebida7, #bebida9, #bebida11, #bebida13, #bebida15, #bebida17{
-    width: 550px; /* Define a largura da div */
-    height: 210px;
-    margin-top: 60px;
+    width: 100%; /* Define a largura da div */
+    height: 198px;
+    
     
 }
 
 /* Estiliza a caixa de produtos */
 #plebeusSmash2, #plebeusSmash4, #plebeus2, #plebeus4, #reisRainhas2, #reisRainhas4, #reisRainhas6, #nobresConvidados2, #escudeiros2, #escudeiros4, #escudeiros6, 
 #milkShake2, #milkShake4, #sobremesas2, #cerveja2, #cerveja4, #cerveja6, #cerveja8, #bebida2, #bebida4, #bebida6, #bebida8, #bebida10, #bebida12, #bebida14, #bebida16{
-    width: 550px; /* Define a largura da div */
-    height: 210px;
+    width: 100%; /* Define a largura da div */
+    height: 198px;
 
 
 }
 
+#plebeusSmash5, #plebeusSmash4, #nobresConvidados3,#plebeus2, #plebeus1, #plebeus4,#escudeiros5 {
+    height: 220px;
+}
+
+#plebeus3,#reisRainhas2,
+#reisRainhas4,
+#reisRainhas3,#reisRainhas6, #nobresConvidados1,#nobresConvidados2, #escudeiros6, #reisRainhas1 {
+    height: 240px;
+   
+}
+
+#reisRainhas5,
+#reisRainhas7, #escudeiros4, #escudeiros3  {
+    height: 258px;
+}
+
+
+
+#secao1,
+#secao2,
+#secao3,
+#secao4,
+#secao5,
+#secao6,
+#secao7,
+#secao8,
+#secao9 {
+   
+margin: 5px;
+}
 .texto p {
 font-size: 15px;
 
 }
+
+
+.img-direita {
+    padding: 15px 0 0 0;
+   margin: 4px 35px 0 47px;
+    width: 160px;
+    height: 140px;
+}
+
+.img-esquerda {
+    padding: 15px 0 0 0;
+    margin: 4px 35px 0 47px;
+    width: 160px;
+    height: 140px;
+
+}
+.texto h3 {
+    font-size: 22px;
+    margin: 15px 12px;
+    width: 230px;
+
+}
+
+/* Infor do produto */
+.texto p {
+    margin: 12px;
+    font-family: "Cabin", serif;
+    font-weight: 900;
+    color: #858585;
+    font-size: 16px;
+    width: 250px;
+
+}
+
+.texto h4{
+    font-size: 16px;
+    margin: 13px 12px;
+}
+
+.olho {
+    margin-top: 7px;
+    width: 20px;
+    margin-left: 195px;
+}
+.quantidade button {
+    font-size: 15px;
+}
+
+#preco {
+    margin-top: -2px;
+
+}
+
+#quantidade {
+    font-size: 15px;
+    color: #000000;
+}
+
+.quantidade {
+    margin-left: 110px;
+    margin-top: -35px;
+    
+}
+
+button.add-to-cart {
+    margin-left: 8px;
+    font-size: 10px;
+    
+}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
