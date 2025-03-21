@@ -14,15 +14,17 @@
     justify-content: center;
 }
 
-.teste #titulo-secao {
+#titulo-secao {
     color: #FFFFFF;
     font-size: 16px;
+    padding-top: 2px;
+    height: 18px;
 }
 
 /* Estiliza a img carrinho */
 
 #carrinho {
-    width: 15px;
+    width: 18px;
     /* Ajuste o tamanho conforme necessário */
     height: auto;
     cursor: pointer;
@@ -546,7 +548,7 @@ footer {
     #plebeus2,
     #plebeus1,
     #escudeiros5 {
-        height: 130px;
+        height: 135px;
     }
 
     #plebeus4,
@@ -558,7 +560,7 @@ footer {
     #nobresConvidados1,
     #nobresConvidados2,
     #escudeiros6 {
-        height: 175px;
+        height: 147px;
 
     }
 
@@ -567,9 +569,11 @@ footer {
     #reisRainhas1,
     #escudeiros4,
     #escudeiros3 {
-        height: 190px;
+        height: 147px;
     }
-
+    #reisRainhas7 {
+        height: 160px;
+    }
     li {
         font-size: 8px;
     }
@@ -604,7 +608,7 @@ footer {
         font-weight: 900;
         color: #858585;
         font-size: 8px;
-        width: 125px;
+        width: 145px;
 
     }
 
@@ -795,7 +799,7 @@ footer {
 
     }
 
-    
+
 
     #plebeusSmash5,
     #plebeusSmash4,
@@ -920,17 +924,16 @@ footer {
 @media screen and (min-width: 601px) and (max-width: 767px) {
 
     #carrinho {
-        width: 15px;
+        width: 18px;
         /* Ajuste o tamanho conforme necessário */
         height: auto;
         cursor: pointer;
-        right: 12px;
+        left: 12px;
         position: absolute;
         /* Agora, ele fica posicionado dentro de um contêiner específico */
-        margin-top: 5px;
+        margin-top: 4px;
         z-index: 1050;
     }
-
     ul {
         margin-top: 110px;
     }
@@ -947,6 +950,7 @@ footer {
 
     .navbar {
         background-color: black !important;
+        height: 30px;
     }
 
     .navbar-toggler {
@@ -956,22 +960,21 @@ footer {
         /* Arredondar as bordas */
         padding: 5px;
         /* Ajuste de tamanho */
-        width: 17px;
-        height: 17px;
-        margin-top: -2px;
+        width: 20px;
+        height: 20px;
+        margin-top: -3px;
     }
 
     .navbar-toggler-icon {
-        width: 10px;
+        width: 13px;
         /* Ajuste o tamanho conforme necessário */
         height: 10px;
         /* Ajuste o tamanho conforme necessário */
         color: rgb(255, 255, 255);
-        margin-top: -20px;
+        margin-top: -17px;
         margin-left: -2px;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
-
     /* Estiliza a caixa de produtos */
     #plebeusSmash1,
     #plebeusSmash3,
@@ -1172,14 +1175,14 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 989px) {
     #carrinho {
-        width: 15px;
+        width: 18px;
         /* Ajuste o tamanho conforme necessário */
         height: auto;
         cursor: pointer;
-        right: 12px;
+        left: 12px;
         position: absolute;
         /* Agora, ele fica posicionado dentro de um contêiner específico */
-        margin-top: 5px;
+        margin-top: 4px;
         z-index: 1050;
     }
 
@@ -1238,12 +1241,9 @@ footer {
 
     }
 
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-
     .navbar {
         background-color: black !important;
+        height: 30px;
     }
 
     .navbar-toggler {
@@ -1253,19 +1253,20 @@ footer {
         /* Arredondar as bordas */
         padding: 5px;
         /* Ajuste de tamanho */
-        width: 17px;
-        height: 17px;
-        margin-top: -2px;
+        width: 20px;
+        height: 20px;
+        margin-top: -3px;
     }
 
     .navbar-toggler-icon {
-        width: 10px;
+        width: 13px;
         /* Ajuste o tamanho conforme necessário */
         height: 10px;
         /* Ajuste o tamanho conforme necessário */
-        color: white;
-        margin-top: -20px;
+        color: rgb(255, 255, 255);
+        margin-top: -17px;
         margin-left: -2px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
     #plebeusSmash1,
@@ -1304,7 +1305,7 @@ footer {
         /* Define a largura da div */
         height: 145px;
         /* Define a altura da div */
-        border: 2px solid rgb(242, 242, 242);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         /* Define a borda */
         padding: 0 0 0 10px;
         box-sizing: border-box;
@@ -1343,7 +1344,7 @@ footer {
         /* Define a largura da div */
         height: 145px;
         /* Define a altura da div */
-        border: 2px solid rgb(242, 242, 242);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         /* Define a borda */
         padding: 0 0 0 10px;
         box-sizing: border-box;
@@ -1481,14 +1482,14 @@ footer {
 @media screen and (min-width: 990px) and (max-width: 1200px) {
 
     #carrinho {
-        width: 15px;
+        width: 18px;
         /* Ajuste o tamanho conforme necessário */
         height: auto;
         cursor: pointer;
         right: 12px;
         position: absolute;
         /* Agora, ele fica posicionado dentro de um contêiner específico */
-        margin-top: 5px;
+        margin-top: 4px;
         z-index: 1050;
     }
 
@@ -1528,7 +1529,7 @@ footer {
         width: 100%;
         /* Define a largura da div */
         height: 175px;
-        box-shadow: 0px 0px 3px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         padding: 0 0 0 10px;
         display: flex;
         margin-top: 30px;
@@ -1565,7 +1566,7 @@ footer {
         width: 100%;
         /* Define a largura da div */
         height: 175px;
-        box-shadow: 0px 0px 3px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         padding: 0 0 0 10px;
         box-sizing: border-box;
         display: flex;
@@ -1660,11 +1661,45 @@ footer {
         width: 20px;
     }
 
+    .quantidade button {
+        color: rgb(0, 0, 0);
+        border: none;
+        background-color: white;
+        margin-bottom: 10px;
+        font-size: 17px;
+
+
+    }
+
+    #preco {
+        margin-top: 5px;
+
+    }
+
+    #quantidade {
+        font-size: 17px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
     .quantidade {
         margin-left: 100px;
         margin-top: -38px;
         position: static;
+        font-weight: bold;
     }
+
+
+    button.add-to-cart {
+        background: linear-gradient(to bottom, #666, #000);
+        /* Gradiente do cinza ao preto */
+        color: white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        /* Sombra para dar destaque */
+        font-size: 9px;
+        margin-left: 10px;
+    }
+
 
 
 }
@@ -1672,14 +1707,14 @@ footer {
 @media screen and (min-width: 1201px) and (max-width: 1330px) {
 
     #carrinho {
-        width: 15px;
+        width: 50px;
         /* Ajuste o tamanho conforme necessário */
         height: auto;
         cursor: pointer;
         right: 12px;
         position: absolute;
         /* Agora, ele fica posicionado dentro de um contêiner específico */
-        margin-top: 5px;
+        margin-top: 4px;
         z-index: 1050;
     }
 
@@ -1720,7 +1755,7 @@ footer {
         width: 100%;
         /* Define a largura da div */
         height: 200px;
-        box-shadow: 0px 0px 3px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         padding: 0 0 0 10px;
         display: flex;
         margin-top: 30px;
@@ -1742,8 +1777,8 @@ footer {
     #escudeiros4,
     #escudeiros6,
     #milkShake2,
-    #milkShake4,
     #sobremesas2,
+    #milkShake4,
     #cerveja2,
     #cerveja4,
     #cerveja6,
@@ -1759,7 +1794,7 @@ footer {
         width: 100%;
         /* Define a largura da div */
         height: 200px;
-        box-shadow: 0px 0px 3px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         padding: 0 0 0 10px;
         display: flex;
         margin-top: 30px;
@@ -1767,16 +1802,16 @@ footer {
 
     }
 
-    .te {
-        margin-right: 25px;
+    #sobremesas1, #sobremesas2 {
+        height: 230px;
     }
 
     #plebeusSmash5,
     #plebeusSmash4,
     #nobresConvidados3,
-    #plebeus1,
+    #plebeus1,#plebeus2,
     #escudeiros5 {
-        height: 220px;
+        height: 230px;
     }
 
     #plebeus4,
@@ -1789,7 +1824,7 @@ footer {
     #nobresConvidados1,
     #nobresConvidados2,
     #escudeiros6 {
-        height: 190px;
+        height: 275px;
 
     }
 
@@ -1797,7 +1832,7 @@ footer {
     #reisRainhas7,
     #escudeiros3,
     #escudeiros4 {
-        height: 210px;
+        height: 280px;
     }
 
     #secao1,
@@ -1925,7 +1960,7 @@ footer {
 
 @media screen and (min-width: 1331px) and (max-width: 1400px) {
     #carrinho {
-        width: 15px;
+        width: 18px;
         /* Ajuste o tamanho conforme necessário */
         height: auto;
         cursor: pointer;
@@ -1973,7 +2008,7 @@ footer {
         width: 100%;
         /* Define a largura da div */
         height: 200px;
-        box-shadow: 0px 0px 3px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         padding: 0 0 0 10px;
         display: flex;
         margin-top: 30px;
@@ -2012,7 +2047,7 @@ footer {
         width: 100%;
         /* Define a largura da div */
         height: 200px;
-        box-shadow: 0px 0px 3px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         padding: 0 0 0 10px;
         display: flex;
         margin-top: 30px;
@@ -2020,16 +2055,20 @@ footer {
 
     }
 
-    .te {
-        margin-right: 25px;
+    #sobremesas1,  #sobremesas2 {
+        height: 240px;
     }
 
     #plebeusSmash5,
     #plebeusSmash4,
     #nobresConvidados3,
-    #plebeus1,
+    #plebeus1,#plebeus2,
     #escudeiros5 {
-        height: 220px;
+        height: 240px;
+    }
+
+    #nobresConvidados2 {
+        height: 270px;
     }
 
     #plebeus4,
@@ -2040,17 +2079,17 @@ footer {
     #reisRainhas3,
     #reisRainhas6,
     #nobresConvidados1,
-    #nobresConvidados2,
     #escudeiros6 {
-        height: 190px;
+        height: 250px;
 
     }
+    
 
     #reisRainhas5,
     #reisRainhas7,
     #escudeiros3,
     #escudeiros4 {
-        height: 210px;
+        height: 280px;
     }
 
     #secao1,
